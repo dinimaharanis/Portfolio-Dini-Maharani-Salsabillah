@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Dini Maharani Salsabillah, Agricultural Engineering graduate with experience in administration, data reporting, field programs, teaching, and organizational coordination.">
+  <meta name="theme-color" content="#eaf3f9">
+  <title>Dini Maharani Salsabillah | Portfolio</title>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@600&family=Allura&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon-1:#3B0A0A; --maroon-2:#1F0505; --black:#120202;
+  --gold:#3A86C8; --cream:#1D4D70; --muted:#527392;
+  --card:rgba(255,255,255,.06); --line:rgba(255,255,255,.14);
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Poppins',sans-serif;color:var(--cream);
+  background:linear-gradient(160deg,var(--maroon-1),var(--maroon-2) 55%,var(--black));
+  background-attachment:fixed;}
+.wrap{max-width:1440px;margin:0 auto;padding:0 24px;}
+h1,h2,h3{margin:0;}
+.display{font-family:'Anton',sans-serif;letter-spacing:.01em;line-height:.95;text-transform:uppercase;}
+.eyebrow{color:var(--gold);font-weight:600;font-size:.85rem;letter-spacing:.03em;}
+u.head{text-decoration:none;border-bottom:3px solid var(--cream);padding-bottom:4px;font-family:'Anton';font-size:1.6rem;letter-spacing:.02em;}
+section{padding:56px 0;}
+.script{font-family:'Caveat',cursive;color:var(--gold);font-size:1.5em;}
+
+/* HERO */
+.hero{padding:64px 0 40px;}
+.hero-text{flex:1;min-width:280px;}
+.hero-text .display{font-size:clamp(2.6rem,9vw,5.2rem);color:var(--cream);}
+.hero-text p{color:var(--muted);margin-top:14px;font-size:1rem;}
+.hero-text .by{margin-top:20px;font-weight:600;}
+.hero-text .by b{color:var(--gold);}
+.photo-slot{border:2px dashed var(--line);border-radius:14px;background:var(--card);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;color:var(--muted);font-size:.8rem;padding:14px;gap:6px;}
+.photo-slot .icon{font-size:1.6rem;}
+.hero .photo-slot{width:220px;height:300px;flex-shrink:0;}
+
+/* PROFILE */
+.profile{display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;}
+.profile .photo-slot{width:180px;height:220px;flex-shrink:0;}
+.profile-body{flex:1;min-width:260px;}
+.profile-body h1{font-size:1.5rem;font-weight:700;color:var(--cream);margin:10px 0 14px;}
+.profile-body p{color:var(--muted);line-height:1.75;}
+.profile-body b{color:var(--cream);}
+.contacts{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;}
+.pill{padding:10px 18px;border-radius:999px;font-size:.82rem;font-weight:600;color:#fff;text-decoration:none;}
+.pill.mail{background:#D64545;} .pill.wa{background:#3FAE5C;}
+.pill.li{background:#2D6FBB;} .pill.ig{background:linear-gradient(45deg,#C22A82,#7A3FC2);}
+
+/* CARD / SECTION HEADER */
+.sec-head{margin-bottom:26px;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px;}
+.job{display:flex;gap:22px;flex-wrap:wrap;}
+.job-photo{width:150px;height:130px;flex-shrink:0;}
+.job-body{display:grid;grid-template-columns:minmax(0,1fr) auto;flex:1;min-width:240px;}
+.job-body .period{grid-column:2;grid-row:1;color:var(--gold);font-size:.78rem;font-weight:600;letter-spacing:.03em;text-align:right;white-space:nowrap;}
+.job-body h3{grid-column:1;grid-row:1;font-size:1.15rem;color:var(--cream);margin-top:0;}
+.job-body .org{grid-column:1 / -1;grid-row:2;color:var(--muted);font-size:.88rem;margin-top:2px;font-weight:500;}
+.job-body ul{margin:12px 0 0;padding-left:18px;color:var(--muted);}
+.job-body ul{grid-column:1 / -1;grid-row:3;}
+.job-body li{margin-bottom:6px;font-size:.9rem;line-height:1.55;}
+.job-body li b{color:var(--cream);}
+
+/* EDUCATION */
+.edu-card{display:flex;gap:22px;align-items:center;flex-wrap:wrap;}
+.edu-card .photo-slot{width:150px;height:150px;flex-shrink:0;border-radius:50%;}
+.edu-card .photo-slot img{width:100%;height:100%;padding:18px;object-fit:contain;}
+.edu-info h3{font-size:1.2rem;color:var(--cream);}
+.edu-info p{color:var(--muted);margin:4px 0 0;font-size:.92rem;}
+.edu-info .gpa{color:var(--gold);font-weight:700;margin-top:8px;}
+.edu-info .coursework-label{color:var(--gold);font-size:.82rem;font-weight:600;margin:10px 0 6px;}
+
+/* CERT */
+.cert-list{list-style:none;padding:0;margin:0;}
+.cert-list li{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  padding:13px 0;border-top:1px solid var(--line);font-size:.9rem;}
+.cert-list li span.src{color:var(--muted);}
+.badge{background:var(--gold);color:#17365D;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:6px;margin-left:8px;}
+
+/* SKILLS */
+.skill-groups{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+.skill-groups h4{color:var(--gold);font-size:.8rem;letter-spacing:.03em;margin-bottom:10px;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{border:1px solid var(--line);background:var(--card);padding:7px 13px;border-radius:8px;font-size:.83rem;}
+@media (max-width:680px){.skill-groups{grid-template-columns:1fr;}}
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:8px;}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 10px;
+  text-align:center;font-size:.82rem;font-weight:600;}
+.tool .sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle;}
+
+/* ACHIEVEMENTS */
+.ach-row{display:flex;gap:20px;flex-wrap:wrap;align-items:stretch;}
+.ach-row .photo-slot{width:200px;height:170px;}
+.ach-list{flex:1;min-width:240px;}
+.ach-item{padding:14px 0;border-top:1px solid var(--line);}
+.ach-item:first-child{border-top:none;}
+.ach-item .tag{color:var(--gold);font-size:.75rem;font-weight:700;letter-spacing:.03em;}
+.ach-item p{margin:4px 0 0;color:var(--cream);font-size:.94rem;}
+
+/* CONTACT */
+.contact-final{padding-bottom:70px;}
+.contact-final .display{font-size:clamp(2.2rem,7vw,3.6rem);color:var(--cream);}
+.contact-final .photo-slot{width:200px;height:260px;flex-shrink:0;}
+footer{text-align:center;color:var(--muted);font-size:1.05rem;font-weight:700;padding:26px 0;border-top:1px solid var(--line);}
+
+/* NAVIGATION AND MOTION */
+html{scroll-behavior:smooth;scroll-padding-top:88px;}
+body{background:#160c12;}
+.site-nav{position:sticky;top:0;z-index:20;background:rgba(19,10,15,.88);border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(16px);}
+.nav-inner{max-width:1440px;min-height:68px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.nav-brand{flex:none;color:var(--cream);font-family:'Anton',sans-serif;font-size:1.12rem;text-decoration:none;line-height:1;}
+.nav-brand span{color:var(--gold);}
+.nav-links{display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none;}
+.nav-links::-webkit-scrollbar{display:none;}
+.nav-links a{position:relative;flex:none;padding:11px 10px;color:#e7d5cd;text-decoration:none;font-size:.72rem;font-weight:600;white-space:nowrap;transition:color .2s ease;}
+.nav-links a::after{content:'';position:absolute;left:10px;right:10px;bottom:5px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .2s ease;}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1);}
+section{position:relative;isolation:isolate;scroll-margin-top:68px;}
+section::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.72;}
+.hero{min-height:calc(88vh - 68px);display:flex;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 78% 34%,rgba(237,142,72,.3),transparent 33%),radial-gradient(ellipse at 12% 90%,rgba(46,145,132,.32),transparent 35%),linear-gradient(125deg,#251019,#471b20 55%,#183b3a);}
+.hero{min-height:88vh;padding:84px 0;background-color:#182e2d;background-image:radial-gradient(ellipse at 78% 25%,rgba(233,169,91,.2),transparent 28%),radial-gradient(ellipse at 18% 80%,rgba(67,146,132,.23),transparent 32%),linear-gradient(125deg,#122421 0%,#213734 48%,#38251f 100%);}
+.hero .photo-slot{display:none;}
+.cover-photo{width:300px;height:410px;flex:none;margin:0;overflow:hidden;align-self:flex-end;border:1px solid rgba(255,255,255,.2);border-radius:150px 150px 18px 18px;background:linear-gradient(160deg,rgba(231,190,130,.22),rgba(255,255,255,.04));}
+.cover-photo img{width:100%;height:100%;object-fit:contain;object-position:center bottom;}
+.hero-link{display:inline-flex;margin-top:26px;padding:12px 18px;border:1px solid rgba(240,189,117,.72);border-radius:5px;color:#f7d7a8;text-decoration:none;font-size:.82rem;font-weight:600;transition:background .2s ease,color .2s ease;}
+.hero-link:hover{background:#f0bd75;color:#1b2420;}
+.hero .wrap{max-width:1000px;}
+.hero-text{max-width:760px;}
+.hero-text .display{font-size:clamp(3.8rem,10vw,7.4rem);line-height:.92;}
+.hero-text .eyebrow{color:#f0bd75;letter-spacing:.12em;}
+.hero-text p{max-width:620px;line-height:1.8;}
+.hero .by{font-size:1rem;}
+.hero .by b{color:#f0bd75;}
+.hero{min-height:100svh;padding:56px 24px;display:grid;place-items:center;text-align:center;}
+.hero .wrap{width:min(100%,960px);}
+.hero-text{max-width:900px;margin:0 auto;}
+.hero-text .display{font-size:clamp(2.8rem,7vw,6rem);line-height:1.08;text-wrap:balance;}
+.hero-text p{margin-left:auto;margin-right:auto;}
+.portfolio-home{min-height:65vh;display:flex;align-items:center;background:radial-gradient(ellipse at 82% 25%,rgba(66,124,178,.2),transparent 38%),#172631;}
+.portfolio-home .display{font-size:clamp(2.2rem,6vw,4rem);}
+main[hidden]{display:none;}
+.hero::before{inset:-35%;background:repeating-linear-gradient(132deg,transparent 0 90px,rgba(255,255,255,.025) 91px 92px);animation:drift-lines 28s linear infinite;}
+.hero .wrap{position:relative;z-index:1;}
+.hero .display{font-size:clamp(4rem,12vw,8rem);}
+.hero-text .eyebrow{display:inline-block;padding:7px 12px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(255,255,255,.08);}
+.hero .photo-slot img,.contact-final .photo-slot img{width:100%;height:100%;object-fit:cover;border-radius:14px;}
+.profile{background:radial-gradient(ellipse at 90% 10%,rgba(30,137,124,.22),transparent 38%),#122a2a;}
+.education{background:radial-gradient(ellipse at 12% 0%,rgba(202,164,72,.19),transparent 40%),#253126;}
+.experience{background:radial-gradient(ellipse at 85% 5%,rgba(224,104,77,.18),transparent 34%),#30191d;}
+.organizational{background:radial-gradient(ellipse at 8% 12%,rgba(66,124,178,.22),transparent 38%),#172631;}
+.achievements{background:radial-gradient(ellipse at 92% 42%,rgba(244,172,60,.24),transparent 35%),#342315;}
+.certification{background:radial-gradient(ellipse at 18% 24%,rgba(64,174,142,.22),transparent 40%),#15302c;}
+.skills{background:radial-gradient(ellipse at 80% 15%,rgba(81,123,177,.24),transparent 38%),#192536;}
+.contact-final{overflow:hidden;background:radial-gradient(ellipse at 76% 50%,rgba(255,195,88,.22),transparent 36%),linear-gradient(125deg,#68351f,#3e221d 52%,#163332);}
+.hero{background:radial-gradient(ellipse at 50% 75%,rgba(203,119,94,.2),transparent 38%),linear-gradient(145deg,#210b15 0%,#451525 56%,#24101b 100%);}
+.work-folder{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;}
+.farmers-development-detail{display:block;}
+.agricultural-instructor-detail{display:block;}
+.fda-heading{display:flex;align-items:flex-start;gap:18px;}
+.fda-profile-logo{width:150px;height:150px;flex:0 0 150px;border:0;border-radius:50%;background:transparent;display:grid;place-items:center;padding:0;overflow:hidden;}
+.fda-profile-logo img{display:block;width:100%;height:100%;padding:4px;object-fit:contain;}
+.fda-heading-main{flex:1;min-width:0;}
+.fda-heading-main h3{font-size:1.2rem;color:var(--cream);}
+.fda-heading-main .fda-period{margin:0 0 5px;text-align:left;}
+.fda-period{margin-left:auto;flex:0 0 auto;color:var(--gold);font-size:.78rem;font-weight:600;letter-spacing:.03em;text-align:right;white-space:nowrap;}
+.fda-org{margin-top:5px;color:var(--muted);font-size:.9rem;font-weight:500;}
+.fda-program{margin-top:2px;color:var(--muted);font-size:.84rem;}
+.fda-summary{margin:18px 0 0;color:var(--muted);font-size:.92rem;line-height:1.7;}
+.fda-section{margin-top:22px;}
+.fda-section h4{margin:0 0 11px;color:var(--gold);font-size:.82rem;font-weight:700;letter-spacing:.03em;}
+.fda-skill-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
+.fda-skill,.fda-result,.fda-document,.fda-certificate{min-width:0;padding:14px;border:1px solid var(--line);border-radius:10px;background:rgba(58,134,200,.055);}
+.fda-skill h5{margin:0 0 6px;color:var(--cream);font-size:.88rem;font-weight:700;}
+.fda-skill p,.fda-document figcaption,.fda-certificate figcaption{margin:0;color:var(--muted);font-size:.8rem;line-height:1.55;}
+.fda-process{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none;counter-reset:fda-step;}
+.fda-process li{position:relative;min-width:0;padding:14px;border:1px solid var(--line);border-radius:10px;background:rgba(58,134,200,.055);counter-increment:fda-step;}
+.fda-process li::before{content:counter(fda-step,decimal-leading-zero);display:block;margin-bottom:8px;color:var(--gold);font-size:.78rem;font-weight:700;}
+.fda-process strong{display:block;margin-bottom:5px;color:var(--cream);font-size:.84rem;}
+.fda-process span{display:block;color:var(--muted);font-size:.78rem;line-height:1.5;}
+.fda-result-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;}
+.fda-result strong{display:block;color:var(--gold);font-size:1.45rem;line-height:1.2;}
+.fda-result span{display:block;margin-top:5px;color:var(--cream);font-size:.84rem;font-weight:700;}
+.fda-result p{margin:4px 0 0;color:var(--muted);font-size:.78rem;line-height:1.45;}
+.fda-document-grid,.fda-certificate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.ai-document-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+.al-document-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+.dld-skill-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
+.secretariat-skill-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+.dld-group-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.dld-document-group{min-width:0;margin:0;padding:14px;border:1px solid var(--line);border-radius:10px;background:rgba(58,134,200,.055);}
+.dld-document-group h5{margin:0 0 10px;color:var(--cream);font-size:.88rem;font-weight:700;}
+.dld-photo-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:10px;}
+.dld-photo-pair .fda-image-placeholder{min-height:0;aspect-ratio:1.5;margin:0;padding:8px;}
+.dld-photo-open{display:block;width:100%;margin:0;padding:0;border:0;border-radius:8px;background:transparent;cursor:zoom-in;}
+.dld-photo-open .dld-activity-image{height:180px;margin:0;object-fit:cover;}
+.dld-document-group figcaption{margin:0;color:var(--muted);font-size:.8rem;line-height:1.55;}
+.dld-certificate{width:100%;margin-top:0;}
+.dld-document-open{display:block;width:100%;margin:0 0 10px;padding:0;border:0;border-radius:8px;background:transparent;cursor:zoom-in;}
+.dld-document-open .fda-document-image{height:240px;margin:0;padding:8px;background:#F3F7FA;object-fit:contain;}
+.dld-certificate figcaption{margin:0;color:var(--muted);font-size:.8rem;line-height:1.55;}
+.hrd-document-group .hrd-photo-pair{grid-template-columns:repeat(2,minmax(0,1fr));}
+.hrd-document-group .hrd-photo-pair.hrd-photo-single{grid-template-columns:1fr;}
+.hrd-document-open{display:block;width:100%;margin:0;padding:0;border:0;border-radius:8px;background:transparent;cursor:zoom-in;}
+.hrd-document-open .fda-document-image{height:180px;margin:0;object-fit:cover;}
+.hrd-document-open.hrd-photo-contain .fda-document-image{padding:8px;background:#F3F7FA;object-fit:contain;}
+.hrd-document-open.hrd-certificate-open .fda-document-image{height:240px;margin:0;padding:8px;background:#F3F7FA;object-fit:contain;}
+.hrd-photo-pending{min-height:0;margin:0;aspect-ratio:1.5;padding:10px;}
+.fda-document{margin:0;}
+.fda-document-image{display:block;width:100%;height:auto;max-height:360px;margin-bottom:10px;border:1px solid var(--line);border-radius:8px;object-fit:contain;}
+.al-document-open{display:block;width:100%;margin:0 0 10px;padding:0;border:0;border-radius:8px;background:transparent;cursor:zoom-in;}
+.al-document-open .fda-document-image{height:190px;margin:0;object-fit:cover;}
+.al-document-open.al-certificate .fda-document-image{height:190px;padding:8px;background:#F3F7FA;object-fit:contain;}
+.al-course-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px;}
+.al-course-tags .chip{padding:5px 9px;font-size:.75rem;}
+.fda-image-placeholder{display:grid;min-height:150px;margin-bottom:10px;place-items:center;padding:14px;border:1px dashed var(--line);border-radius:8px;background:rgba(58,134,200,.045);color:var(--muted);text-align:center;font-size:.78rem;line-height:1.5;}
+.ai-document-photo{min-height:170px;}
+.ai-certificate-placeholder{min-height:190px;background:#F3F7FA;}
+.fda-certificate{margin:0;}
+.fda-certificate .fda-image-placeholder{min-height:190px;}
+.fda-cert-tools-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px;}
+.fda-cert-tools-grid .fda-section{min-width:0;margin-top:0;}
+.fda-tools.tools-grid{gap:12px;margin:8px 0 0;}
+.fda-tools .tool{width:76px;height:76px;min-height:76px;flex:none;padding:12px;}
+.fda-tools .tool img{display:block;width:48px;height:48px;object-fit:contain;}
+.fda-tools .fda-tool-placeholder{width:76px;height:76px;flex-basis:76px;border-radius:10px;background:#F8FBFD;border-color:#B8C9D6;}
+@media(max-width:900px){
+  .fda-skill-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .ai-skill-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .fda-process{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .fda-cert-tools-grid{grid-template-columns:1fr;}
+  .ai-document-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .al-document-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .dld-skill-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .secretariat-skill-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .dld-group-grid{grid-template-columns:1fr;}
+  .dld-certificate{width:100%;}
+}
+@media(max-width:520px){
+  .fda-heading{gap:12px;flex-wrap:wrap;}
+  .fda-heading-main{flex-basis:calc(100% - 162px);}
+  .fda-heading-main h3{font-size:1rem;}
+  .fda-period{font-size:.7rem;white-space:normal;}
+  .fda-skill-grid,.fda-document-grid,.fda-certificate-grid{grid-template-columns:1fr;}
+  .ai-document-grid{grid-template-columns:1fr;}
+  .al-document-grid{grid-template-columns:1fr;}
+  .dld-skill-grid{grid-template-columns:1fr;}
+  .secretariat-skill-grid{grid-template-columns:1fr;}
+  .dld-photo-pair{grid-template-columns:1fr;}
+  .fda-result-grid{grid-template-columns:1fr;}
+  .fda-process{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:900px) and (min-width:521px){
+  .fda-result-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+.teaching-assistant-card .folder-grid{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));margin-inline:auto;}
+.teaching-assistant-card .folder-grid .upload-card{min-height:0;aspect-ratio:1.8;}
+.teaching-assistant-card .folder-grid .upload-card img{object-fit:contain;background:#fff;}
+.teaching-assistant-card .org span{display:inline-block;margin-top:6px;}
+.work-folder .job-body{min-width:0;}
+.fda-details{border-top:1px solid var(--line);padding-top:14px;}
+.experience-gallery{border-top:1px solid var(--line);padding-top:14px;}
+.experience-gallery h4{margin:0 0 11px;color:var(--gold);font-size:.82rem;font-weight:700;letter-spacing:.03em;}
+.folder-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px;}
+.upload-card{position:relative;display:flex;min-height:155px;aspect-ratio:1.25;overflow:hidden;align-items:center;justify-content:center;border:1px dashed rgba(255,255,255,.27);border-radius:10px;background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.025));color:var(--cream);text-align:center;cursor:pointer;}
+.upload-card:hover{border-color:#f0bd75;background-color:rgba(255,255,255,.07);}
+.upload-card input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;}
+.upload-prompt{padding:12px;font-size:.76rem;font-weight:600;}
+.upload-prompt span{display:block;margin-bottom:7px;color:#f0bd75;font-size:1.4rem;}
+.upload-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.achievement-grid .upload-card img,.cert-preview .upload-card img{object-fit:contain;background:#fff;}
+.upload-card.has-photo input{inset:auto 7px 7px auto;width:30px;height:30px;z-index:2;}
+.upload-card.has-photo::after{content:'↻';position:absolute;right:7px;bottom:7px;display:grid;width:30px;height:30px;place-items:center;border-radius:50%;background:rgba(12,20,19,.8);color:#fff;pointer-events:none;}
+.upload-caption{margin:7px 0 0;color:var(--muted);font-size:.75rem;line-height:1.5;}
+.org-heading{color:var(--cream)!important;font-weight:700!important;}
+.achievement-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.achievement-grid .ach-item{padding:18px;border:1px solid var(--line);border-radius:12px;background:rgba(10,8,7,.2);}
+.achievement-grid .upload-card{margin-top:14px;min-height:210px;aspect-ratio:1.05;}
+.cert-list li{display:block;padding:0;border:0;margin:9px 0;}
+.cert-details{border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.035);overflow:hidden;}
+.cert-details summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 16px;cursor:pointer;list-style:none;}
+.cert-details summary::after{content:'→';color:#f0bd75;font-size:1.25rem;font-weight:600;}
+.cert-details[open] summary::after{content:'→';}
+.cert-title{font-size:.88rem;font-weight:400;}
+.cert-name{font-weight:700;}
+.cert-details .src{flex:none;color:var(--muted);font-size:.78rem;}
+.cert-preview{padding:0 16px 16px;}
+.cert-preview.cert-dual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.cert-preview .upload-card{width:min(100%,320px);min-height:190px;aspect-ratio:1.4;}
+.photo-dialog{width:min(92vw,850px);max-height:92vh;padding:16px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:#14201f;color:var(--cream);}
+.photo-dialog::backdrop{background:rgba(5,8,8,.82);backdrop-filter:blur(5px);}
+.dialog-close{display:block;margin:0 0 12px auto;padding:8px 12px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--cream);font:inherit;cursor:pointer;}
+.dialog-image{display:block;max-width:100%;max-height:70vh;margin:0 auto;border-radius:8px;object-fit:contain;}
+.dialog-caption{margin:12px 4px 2px;color:var(--cream);line-height:1.6;}
+.card,.tool,.photo-slot{transition:transform .28s ease,border-color .28s ease,background-color .28s ease;}
+.card:hover,.tool:hover{transform:translateY(-4px);border-color:rgba(242,169,59,.48);}
+.chip{transition:transform .2s ease,border-color .2s ease;}
+.chip:hover{transform:translateY(-2px);border-color:var(--gold);}
+.motion-ready .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1);}
+.motion-ready .reveal.is-visible{opacity:1;transform:translateY(0);}
+@keyframes drift-lines{to{transform:translate3d(7%,5%,0);}}
+@media(max-width:760px){
+  .nav-inner{display:block;padding:12px 14px 8px;}
+  .nav-brand{display:block;margin:0 0 5px 5px;}
+  .nav-links{margin:0 -4px;}
+  .nav-links a{padding:10px 9px;font-size:.68rem;}
+  .hero{min-height:76vh;padding:64px 0 40px;}
+  .hero-text .display{font-size:clamp(3.4rem,15vw,5rem);}
+  .cover-photo{width:min(42vw,210px);height:270px;margin:26px auto 0;align-self:center;}
+  .hero .wrap{display:block!important;}
+  .folder-grid{gap:9px;}
+  .upload-card{min-height:125px;}
+  .achievement-grid{grid-template-columns:1fr;}
+  .achievement-grid .upload-card{min-height:190px;}
+  .cert-details summary{align-items:flex-start;flex-direction:column;}
+  section{scroll-margin-top:100px;}
+}
+.hero{min-height:100svh;padding:56px 24px;display:grid;place-items:center;text-align:center;}
+.hero .wrap{width:min(100%,960px);}
+.hero-text{max-width:900px;margin:0 auto;}
+.hero-text .display{color:#fff;font-size:7rem;line-height:.95;white-space:nowrap;}
+.hero .wrap{position:relative;display:grid;justify-items:center;align-content:center;}
+.hero::before{inset:26px;border:1px solid rgba(255,238,229,.15);background:repeating-linear-gradient(135deg,transparent 0 72px,rgba(255,255,255,.025) 73px 74px);animation:drift-lines 22s linear infinite;}
+.hero::after{content:'';position:absolute;left:7%;right:7%;bottom:12%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,220,208,.45),transparent);pointer-events:none;}
+.hero-text{grid-area:1 / 1;z-index:1;width:100%;max-width:none;}
+.hero-text .display{font-size:clamp(3rem,14vw,10rem);text-shadow:0 8px 32px rgba(0,0,0,.28);-webkit-text-stroke:1px rgba(255,255,255,.58);}
+.cover-portrait{grid-area:1 / 1;z-index:2;width:min(330px,62vw);height:min(440px,59vh);margin:22px auto -24px;display:flex;align-items:flex-end;justify-content:center;}
+.cover-portrait img{width:100%;height:100%;object-fit:contain;object-position:center bottom;}
+.cover-name{position:relative;z-index:3;margin:12px 0 0;color:#fff;font-size:1.1rem;font-weight:600;}
+.hero-text .eyebrow,.hero-text p{display:none;}
+.cover-title{position:relative;top:20vh;letter-spacing:.07em;animation:cover-title-in .9s .12s both cubic-bezier(.2,.7,.2,1);}
+.cover-portrait{animation:cover-photo-in 1s .45s both cubic-bezier(.2,.7,.2,1);}
+.cover-name{animation:cover-name-in .75s .8s both ease-out;}
+@keyframes cover-title-in{from{opacity:0;transform:translateY(28px) scale(.97);}to{opacity:1;transform:translateY(0) scale(1);}}
+@keyframes cover-photo-in{from{opacity:0;transform:translateY(30px) scale(.96);}to{opacity:1;transform:translateY(0) scale(1);}}
+@keyframes cover-name-in{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.slide-wipe{position:fixed;inset:0;z-index:40;pointer-events:none;background:linear-gradient(120deg,#240b16,#50182b 52%,#761f39);}
+body.portfolio-ready .site-nav{position:fixed;top:0;left:0;right:0;}
+body.portfolio-ready #portfolio-content{padding-top:68px;}
+body.portfolio-ready section{scroll-margin-top:78px;}
+body.portfolio-ready #about{scroll-margin-top:68px;}
+.contact-location{padding:0;border:0;margin:12px 0 0;color:var(--cream);font-size:.8rem;letter-spacing:.12em;text-align:left;}
+.cover-enter{animation:cover-in 1s ease-out both;}
+.cover-exit{animation:cover-out 1.1s cubic-bezier(.65,0,.25,1) both;pointer-events:none;}
+body.cover-hidden #cover{display:none;}
+.portfolio-enter{animation:portfolio-in .9s ease-out both;}
+@keyframes cover-in{from{opacity:0;transform:translateY(22px) scale(.985);}to{opacity:1;transform:translateY(0) scale(1);}}
+@keyframes cover-out{to{opacity:0;transform:translateX(-110vw);}}
+@keyframes portfolio-in{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+.profile-portrait{width:168px;height:168px;flex:0 0 168px;margin:0;overflow:hidden;border:2px solid rgba(255,255,255,.35);border-radius:50%;background:rgba(255,255,255,.06);}
+.profile-portrait img{width:100%;height:100%;object-fit:cover;object-position:center 18%;}
+.edu-card .photo-slot{border:0;background:transparent;}
+.edu-card .photo-slot img{padding:4px;}
+@media(max-width:760px){
+  .hero-text .display{font-size:4rem;}
+  .cover-portrait{width:190px;height:260px;}
+}
+@media(max-width:680px){
+  .profile{gap:18px;}
+  .profile-portrait{width:34%;height:auto;aspect-ratio:1;flex:0 0 34%;min-width:112px;}
+  .profile-body{min-width:0;flex:1;}
+  .profile-body .contacts .pill{max-width:100%;white-space:normal;overflow-wrap:anywhere;border-radius:8px;padding:9px 10px;}
+}
+.achievement-grid .upload-card{width:min(100%,280px);min-height:260px;margin:18px auto 0;aspect-ratio:1;}
+.achievement-grid .upload-caption{text-align:center;font-size:.82rem;}
+.skill-groups .language-flag{margin-right:7px;font-size:1.05rem;}
+.profile-visual{display:flex;width:168px;flex:0 0 168px;flex-direction:column;align-items:center;gap:13px;}
+.profile-portrait{width:100%;height:auto;aspect-ratio:1;flex:none;border-radius:50%;}
+.profile-portrait img{object-position:center 20%;}
+.cv-qr-slot{display:flex;width:100%;flex-direction:column;align-items:center;justify-content:center;}
+.cv-qr-slot .upload-card{width:min(100%,150px);min-height:0;flex:none;aspect-ratio:1;border:0!important;border-radius:0;background:transparent!important;}
+.cv-qr-slot .upload-card img{object-fit:contain;background:#fff;padding:0;}
+.cv-qr-slot .upload-caption{width:100%;margin:4px 0 0;text-align:center;color:var(--cream);font-weight:600;letter-spacing:.04em;}
+.achievement-grid .ach-item{display:flex;flex-direction:column;align-items:stretch;}
+.achievement-grid .ach-item p{min-height:5em;}
+.achievement-grid .upload-card{margin-top:auto;}
+.cert-details summary{display:grid;grid-template-columns:minmax(0,1fr) auto 24px;align-items:center;}
+.cert-details summary::after{grid-column:3;grid-row:1;justify-self:end;}
+.cert-details .src{text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.tool{min-height:106px;display:grid;place-items:center;}
+.tool img{display:block;width:52px;height:52px;object-fit:contain;}
+.language-group .language-flag{display:block;width:25px;height:18px;flex:none;margin:0;object-fit:cover;border-radius:2px;}
+.profile .chips{width:100%;flex:1 0 100%;flex-wrap:nowrap;justify-content:center;overflow-x:auto;scrollbar-width:thin;padding:4px 0;}
+.profile .chip{flex:none;white-space:nowrap;}
+.profile .contacts{width:100%;flex:1 0 100%;flex-wrap:nowrap;justify-content:center;overflow-x:auto;scrollbar-width:thin;padding:4px 0 10px;}
+.profile .contacts .pill{display:inline-flex;flex:none;align-items:center;gap:12px;min-height:66px;padding:18px 22px;border-radius:10px;white-space:nowrap;font-size:.9rem;}
+.contact-icon{width:27px;height:27px;flex:none;object-fit:contain;}
+.skill-groups{display:block;}
+.skill-groups .chips{display:flex;flex-wrap:wrap;gap:9px;}
+.tools-grid{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:8px 0 26px;}
+.tool{position:relative;width:76px;height:76px;min-height:76px;flex:none;padding:12px;}
+.tool img,.tool svg{width:48px;height:48px;object-fit:contain;}
+.tool.google-workspace-tool{width:150px;}
+.tool.google-workspace-tool img{width:126px;height:auto;max-height:48px;object-fit:contain;}
+.tool::after{content:attr(aria-label);position:absolute;z-index:10;left:50%;bottom:calc(100% + 8px);padding:7px 10px;border-radius:5px;background:#183247;color:#fff;font-size:.76rem;font-weight:600;white-space:nowrap;pointer-events:none;opacity:0;visibility:hidden;transform:translate(-50%,4px);transition:opacity .18s ease,transform .18s ease,visibility .18s ease;}
+.tool:hover::after,.tool:focus-visible::after{opacity:1;visibility:visible;transform:translate(-50%,0);}
+.skill-subheading{color:var(--gold);font-size:.8rem;margin:22px 0 10px;}
+.language-group h4{color:var(--gold);font-size:.8rem;letter-spacing:.03em;margin:22px 0 10px;font-weight:600;}
+.language-group .chips{flex-wrap:nowrap;align-items:center;overflow-x:auto;}
+.language-group .chip{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;}
+.cover-portrait{height:min(510px,61vh);}
+.hero::before{background:none;}
+.cover-portrait{width:min(560px,76vw);height:min(650px,68vh);margin:-22px auto -54px;}
+.cover-portrait img{object-fit:cover;object-position:center top;}
+.cover-name{position:absolute;z-index:3;top:calc(67% + 5.5em);left:0;right:0;margin:0;font-size:1.48rem;text-transform:uppercase;text-shadow:0 2px 18px rgba(0,0,0,.7);}
+.cover-exit{animation-duration:1.5s;}
+.motion-ready .reveal{transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);}
+#about > .wrap.profile{width:min(calc(100% - 48px),1440px);max-width:1440px;padding-inline:0;row-gap:14px;}
+#about > .wrap.profile > .contacts{margin-top:0;}
+.hero .wrap{width:min(100%,1440px);max-width:1440px;}
+.profile .contacts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;overflow:visible;}
+.profile .contacts .pill{min-height:148px;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:13px;padding:18px;border-radius:10px;white-space:normal;font-size:.9rem;}
+.contact-top{display:flex;align-items:center;justify-content:space-between;min-height:32px;}
+.contact-icon{width:32px;height:32px;}
+.contact-arrow{color:rgba(255,255,255,.9);font-size:1.35rem;line-height:1;}
+.contact-rule{height:1px;width:100%;background:rgba(255,255,255,.5);}
+.contact-detail{margin-top:auto;line-height:1.45;overflow-wrap:anywhere;}
+.profile-body>p,.job-body li,.ach-item p{text-align:justify;text-justify:inter-word;}
+.contact-final>.wrap{width:min(calc(100% - 48px),1440px);max-width:1440px;display:grid!important;grid-template-columns:minmax(0,1fr) minmax(280px,360px);align-items:end;column-gap:clamp(36px,7vw,100px)!important;row-gap:24px!important;}
+.contact-final>.wrap>div:first-child{min-width:0!important;margin-left:clamp(0px,5vw,72px);}
+.contact-final .display{font-size:clamp(3rem,5.6vw,5rem);}
+.contact-final .script{position:relative;z-index:2;display:inline-block;margin-left:0;font-size:clamp(2.8rem,4.8vw,3.8rem);transform:none;text-shadow:0 3px 14px rgba(0,0,0,.35);}
+.contact-final .display{font-family:'Times New Roman MT Condensed','Times New Roman',serif;font-stretch:condensed;}
+.contact-final .script{font-family:'Allura',cursive;font-style:normal;text-transform:lowercase;}
+.contact-cards{position:relative;left:0;width:min(calc(100% + 176px),850px);max-width:850px;transform:none;}
+@media(max-width:900px){
+  .contact-final>.wrap{grid-template-columns:minmax(0,1fr) minmax(240px,32vw);column-gap:28px!important;row-gap:24px!important;}
+  .contact-final>.wrap>div:first-child{margin-left:0;}
+  .contact-cards{width:100%;left:auto;transform:none;grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+.contact-cards{display:grid;grid-template-columns:minmax(0,1.2fr) repeat(2,minmax(0,1fr));gap:12px;margin-top:14px;}
+.contact-cards .pill{min-height:148px;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:13px;padding:18px;border-radius:10px;white-space:normal;font-size:.9rem;}
+.contact-cards .contact-detail{font-size:.88rem;}
+.contact-cards .mail .contact-detail{font-size:.76rem;white-space:nowrap;overflow-wrap:normal;}
+@media(max-width:900px){.contact-cards{grid-template-columns:1fr;}.contact-cards .mail .contact-detail{font-size:.88rem;}}
+.contact-final .display{font-size:clamp(3rem,5.6vw,5rem);white-space:nowrap;}
+.contact-final .script{position:relative;z-index:2;display:inline-block;margin-left:0;font-size:clamp(2.8rem,4.8vw,3.8rem);transform:none;text-shadow:0 3px 14px rgba(0,0,0,.35);}
+.contact-final .photo-slot{width:min(360px,28vw);height:min(480px,62vh);flex:0 0 min(360px,28vw);margin:0 -88px 0 auto;overflow:hidden;align-self:flex-end;}
+.contact-final .photo-slot img{object-fit:cover;object-position:center top;}
+@media(max-width:900px){.contact-final>.wrap{grid-template-columns:minmax(0,1fr) minmax(240px,32vw);}}
+@media(max-width:900px){.profile .contacts{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:680px){
+  .profile .chips,.profile .contacts{width:100%;flex-basis:100%;}
+  #about .profile-body .chips .chip{white-space:normal;overflow-wrap:anywhere;}
+  #about .profile-body .chips{justify-content:flex-start;}
+  #about .profile-body .chips .chip{flex:0 1 auto;max-width:100%;}
+  .profile .contacts .pill{padding:12px 14px;font-size:.78rem;}
+  .profile .contacts .pill{min-height:128px;padding:15px;}
+  .cover-portrait{width:min(420px,88vw);height:min(560px,60vh);}
+  .cover-name{top:calc(68% + 5.5em);font-size:1.12rem;}
+  .contact-final>.wrap{grid-template-columns:1fr;column-gap:28px!important;row-gap:24px!important;}
+  .contact-final .photo-slot{width:min(280px,72vw);height:330px;margin:0 -52px 0 auto;}
+  .contact-cards{width:100%;grid-template-columns:1fr;left:auto;transform:none;margin-top:14px;}
+}
+@media(max-width:760px){
+  #about .chips,#about .contacts{flex-wrap:wrap;overflow:visible;}
+  #about .chip,#about .contacts .pill{white-space:normal;}
+}
+@media(max-width:680px){
+  .profile-visual{width:34%;flex:0 0 34%;min-width:112px;}
+  .profile-portrait{width:100%;min-width:0;height:auto;aspect-ratio:1;}
+  .cert-details summary{grid-template-columns:minmax(0,1fr) auto 24px;gap:5px 12px;}
+  .cert-details .src{grid-column:2;grid-row:1;white-space:nowrap;}
+  .cert-details summary::after{grid-column:3;grid-row:1;}
+}
+@media(max-width:380px){.hero-text .display{font-size:2.8rem;}}
+
+/* LIGHT THEME */
+body{color:#1D4D70!important;background:#EDF3F6!important;background-image:linear-gradient(145deg,#F6F9FA 0%,#EDF3F6 48%,#F3F7F8 100%)!important;}
+body b,body strong{color:#1D4D70!important;}
+body .pill b,body .pill strong{color:inherit!important;}
+.site-nav{background:rgba(255,255,255,.94)!important;border-bottom-color:#DCE5ED!important;}
+.nav-brand,.nav-links a{color:#183247!important;}
+.nav-links a:hover,.nav-links a.active{color:#3A86C8!important;}
+.nav-links a::after{background:#3A86C8!important;}
+.hero{background:linear-gradient(135deg,#F8FBFD 0%,#E8F1F6 100%)!important;}
+.hero::before{border-color:rgba(24,50,71,.08)!important;background:repeating-linear-gradient(135deg,transparent 0 72px,rgba(24,50,71,.025) 73px 74px)!important;}
+.hero::after{background:linear-gradient(90deg,transparent,rgba(58,134,200,.3),transparent)!important;}
+.hero-text .display{color:#183247!important;text-shadow:none!important;-webkit-text-stroke:0!important;}
+.cover-name{color:#183247!important;text-shadow:none!important;}
+.hero-text .eyebrow,.hero .by b{color:#3A86C8!important;}
+.hero-text .eyebrow{background:#FFFFFF!important;border-color:#DCE5ED!important;}
+.hero-link{color:#17365D!important;border-color:#3A86C8!important;}
+.hero-link:hover{background:#3A86C8!important;color:#FFFFFF!important;}
+.portfolio-home{background:linear-gradient(125deg,#E2EDF3 0%,#F4F8FA 56%,#E2EEEA 100%)!important;}
+.profile{background:linear-gradient(120deg,#E6F0F5 0%,#F6F9FA 100%)!important;}
+.education{background:linear-gradient(125deg,#F4F7F3 0%,#E2EEE9 100%)!important;}
+.experience{background:linear-gradient(130deg,#E6EEF4 0%,#F5F8FA 100%)!important;}
+.organizational{background:linear-gradient(125deg,#E1EEE9 0%,#F3F7F5 100%)!important;}
+.achievements{background:linear-gradient(125deg,#F5F1E8 0%,#EDF3F5 100%)!important;}
+.certification{background:linear-gradient(125deg,#E2ECF2 0%,#F3F7F9 100%)!important;}
+.skills{background:linear-gradient(125deg,#EDF3F4 0%,#E2ECF1 100%)!important;}
+.contact-final{background:linear-gradient(130deg,#E2ECF1 0%,#F3F7F7 52%,#E0ECE7 100%)!important;}
+section:not(.hero)::after{content:"";position:absolute;top:0;left:0;width:100%;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(58,134,200,.2) 24%,rgba(45,125,112,.18) 76%,transparent);}
+.card,.tool,.chip,.cert-details,.achievement-grid .ach-item{background:#FFFFFF!important;border-color:#DCE5ED!important;}
+.photo-slot,.profile-portrait{background:#F3F7FA!important;border-color:#C7D5E0!important;color:#526576!important;}
+.profile-portrait{border-color:#C7D5E0!important;}
+.pill{background:#15566C!important;color:#FFFFFF!important;}
+.pill:hover{background:#147D92!important;}
+.upload-prompt span,.cert-details summary::after,.skill-groups h4,.skill-subheading,.language-group h4,.job-body .period,.edu-info .gpa,.ach-item .tag{color:#3A86C8!important;}
+.upload-card{background:#F8FBFD!important;border-color:#B8C9D6!important;color:#526576!important;}
+.upload-card:hover{background:#EEF5F8!important;border-color:#3A86C8!important;}
+.cv-qr-slot .upload-card{border:0!important;border-radius:0;background:transparent!important;}
+.cv-qr-slot .upload-card img{object-fit:contain;background:#fff;padding:0;}
+.achievement-grid .ach-item{align-items:center;text-align:center;box-shadow:0 5px 18px rgba(24,50,71,.05);}
+.achievement-grid .ach-item p{text-align:center;}
+.achievement-grid .upload-card,.achievement-grid .upload-card:hover{border:0!important;border-radius:0;background:transparent!important;}
+.achievement-grid .upload-card img{object-fit:contain;object-position:center;background:#fff;}
+.contact-final .script{color:#3A86C8!important;text-shadow:none!important;}
+.contact-arrow{color:rgba(255,255,255,.9)!important;}
+.contact-rule{background:rgba(255,255,255,.48)!important;}
+.photo-dialog{background:#FFFFFF!important;color:#183247!important;}
+.photo-dialog::backdrop{background:rgba(24,50,71,.38)!important;}
+.dialog-close{background:#FFFFFF!important;border-color:#C7D5E0!important;color:#183247!important;}
+.cert-details .src,.upload-caption,footer{color:#526576!important;}
+.slide-wipe{background:linear-gradient(120deg,#F4F7FA,#DDEAF1 52%,#C8E0E7)!important;}
+.card:hover,.tool:hover{border-color:rgba(58,134,200,.5)!important;}
+.chip:hover{border-color:#3A86C8!important;}
+#about > .wrap.profile{display:grid;grid-template-columns:168px minmax(0,1fr);column-gap:32px;align-items:start;}
+.profile-links{grid-column:1/-1;width:100%;display:grid;grid-template-columns:minmax(0,2.2fr) minmax(220px,.9fr);gap:clamp(18px,3vw,40px);align-items:stretch;}
+.profile-main{min-width:0;display:flex;flex-direction:column;gap:18px;}
+.profile-main .chips{display:flex;flex:0 0 auto;flex-direction:row;flex-wrap:wrap;align-items:flex-start;gap:8px;width:100%;margin:0;padding:0;overflow:visible;}
+.profile-main .chips .chip{flex:0 1 auto;width:fit-content;max-width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;}
+.profile-main .contacts{display:grid;flex:0 0 auto;width:100%;grid-template-columns:max-content repeat(2,minmax(0,1fr));gap:14px;margin:0;padding:0;overflow:visible;}
+.profile-main .contacts .pill{width:auto;min-width:0;min-height:148px;}
+.profile-main .contacts .mail .contact-detail{white-space:nowrap;overflow-wrap:normal;}
+.profile-qr-column{min-width:0;display:flex;align-items:stretch;justify-content:center;padding-top:12px;}
+.profile-qr-column .cv-qr-slot{height:100%;justify-content:space-between;}
+.profile-qr-column .cv-qr-slot .upload-card{width:min(100%,370px);min-height:0;flex:1;aspect-ratio:auto;}
+@media(max-width:900px){
+  .profile-links{grid-template-columns:minmax(0,2fr) minmax(190px,.9fr);}
+}
+@media(max-width:680px){
+  #about > .wrap.profile{grid-template-columns:minmax(112px,34%) minmax(0,1fr);column-gap:18px;}
+  .profile-links{grid-template-columns:1fr;gap:20px;}
+  .profile-main .contacts{grid-template-columns:1fr;gap:10px;}
+  .profile-qr-column .cv-qr-slot{height:auto;justify-content:center;}
+  .profile-qr-column .cv-qr-slot .upload-card{width:min(100%,260px);flex:0 0 auto;aspect-ratio:1;}
+}
+@media(max-width:380px){
+  .profile-main .contacts{grid-template-columns:1fr;}
+}
+#cover.hero{
+  min-height:100svh;height:100svh;padding:0;display:grid;place-items:center;text-align:left;
+  overflow:hidden;background:transparent!important;background-color:transparent!important;background-image:none!important;
+}
+#cover.hero::before,#cover.hero::after{display:none!important;content:none!important;}
+#cover .cover-layout{
+  position:relative;isolation:isolate;width:100%;height:100%;min-height:0;max-width:none;
+  margin:0 auto;padding:clamp(28px,5vh,64px) clamp(22px,6vw,92px);
+}
+#cover .cover-watermark{
+  position:absolute;z-index:0;inset:-2% -10%;display:grid;grid-template-rows:repeat(14,minmax(0,1fr));align-items:center;
+  overflow:hidden;color:rgba(29,77,112,.055);font-family:'Anton','Arial Black',sans-serif;
+  font-size:clamp(2.8rem,3.9vw,5rem);font-weight:900;line-height:.9;letter-spacing:-.045em;
+  white-space:nowrap;pointer-events:none;user-select:none;
+}
+#cover .cover-watermark span{display:block;width:max-content;flex:none;}
+#cover .cover-watermark span:nth-child(2){transform:translateX(-12%);}
+#cover .cover-watermark span:nth-child(3){transform:translateX(-3%);}
+#cover .cover-watermark span:nth-child(4){transform:translateX(-17%);}
+#cover .cover-watermark span:nth-child(5){transform:translateX(-5%);}
+#cover .cover-watermark span:nth-child(6){transform:translateX(-13%);}
+#cover .cover-watermark span:nth-child(7){transform:translateX(-2%);}
+#cover .cover-watermark span:nth-child(8){transform:translateX(-15%);}
+#cover .cover-watermark span:nth-child(9){transform:translateX(-6%);}
+#cover .cover-watermark span:nth-child(10){transform:translateX(-11%);}
+#cover .cover-watermark span:nth-child(11){transform:translateX(-4%);}
+#cover .cover-watermark span:nth-child(12){transform:translateX(-14%);}
+#cover .cover-watermark span:nth-child(13){transform:translateX(-7%);}
+#cover .cover-watermark span:nth-child(14){transform:translateX(-16%);}
+#cover .cover-portrait{
+  position:absolute;z-index:3;left:2%;bottom:6%;width:min(36vw,680px);height:min(92vh,980px);
+  margin:0;display:flex;align-items:flex-end;justify-content:center;overflow:visible;
+  border:0;border-radius:0;background:transparent;
+}
+#cover .cover-portrait img{
+  display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;
+}
+#cover .cover-content{
+  position:absolute;z-index:auto;top:20%;
+  left:calc(clamp(22px,6vw,92px) + 2% + min(24.05vw,454px) + 12px);
+  right:4%;min-width:0;
+}
+#cover .cover-personal{
+  margin:0 0 .04em 0;color:#3A86C8;font-size:clamp(4rem,6vw,6.5rem);
+  font-weight:700;line-height:.95;letter-spacing:-.045em;
+}
+#cover .cover-personal span:first-child{
+  color:transparent;-webkit-text-stroke:1.5px #3A86C8;
+}
+#cover .cover-title{
+  position:relative;top:auto;margin:0;color:#183247!important;
+  font-family:'Poppins','Arial Black',sans-serif;font-size:clamp(7rem,9vw,10rem);
+  font-weight:800;line-height:.88;letter-spacing:-.085em;text-transform:none;
+  white-space:nowrap;text-shadow:none!important;-webkit-text-stroke:0!important;
+  animation:none;
+}
+#cover .cover-year{
+  position:relative;display:flex;align-items:center;justify-content:flex-end;gap:14px;margin:clamp(10px,1.5vh,18px) clamp(64px,8vw,140px) 0 0;
+  color:#183247;font-family:'Poppins',sans-serif;font-size:clamp(3rem,5.2vw,5.5rem);
+  font-weight:700;line-height:1;letter-spacing:.06em;
+}
+#cover .cover-year span{
+  position:absolute;top:50%;left:calc(min(36vw,680px) * .365 - min(24.05vw,454px) - 12px);
+  right:calc(2.2em + 14px);width:auto;height:3px;background:#3A86C8;transform:translateY(-50%);
+}
+#cover .cover-name{
+  position:relative;z-index:4;width:100%;margin:clamp(6px,1vh,12px) 0 0;
+  color:#183247!important;font-size:clamp(2.5rem,3vw,3rem);
+  font-weight:800;line-height:1.25;text-align:left;text-transform:none;text-shadow:none!important;
+  overflow-wrap:anywhere;animation:none;
+}
+#cover .cover-enter-link{
+  position:relative;z-index:4;display:inline-flex;align-items:center;gap:10px;margin-top:clamp(14px,2vh,24px);
+  padding:12px 18px;border:1px solid #3A86C8;border-radius:999px;
+  background:#183247;color:#fff;font:600 .85rem 'Poppins',sans-serif;
+  cursor:pointer;transition:background-color .2s ease,transform .2s ease;
+}
+#cover .cover-enter-link:hover{background:#245579;transform:translateY(-2px);}
+#cover .cover-enter-link span{font-size:1.1rem;line-height:1;}
+#cover .cover-portrait{animation:none;}
+#cover .cover-portrait img{filter:none;image-rendering:auto;transform:none;}
+#cover.cover-enter{animation:cover-opacity-in .7s ease-out both;}
+@keyframes cover-opacity-in{from{opacity:0;}to{opacity:1;}}
+@media(max-width:900px){
+  #cover .cover-layout{min-height:0;padding:28px;}
+  #cover .cover-watermark{font-size:clamp(2.75rem,5vw,4.3rem);}
+  #cover .cover-portrait{left:-2%;width:min(49vw,470px);height:min(70vh,670px);bottom:5%;}
+  #cover .cover-content{top:27%;left:calc(28px + 2% + min(49vw,470px) + 2px);right:2%;}
+  #cover .cover-title{font-size:clamp(4rem,9vw,6rem);}
+  #cover .cover-name{font-size:clamp(1.5rem,3vw,2rem);}
+  #cover .cover-year span{left:calc(min(49vw,470px) * .30 - min(49vw,470px) - 4% - 2px);}
+}
+@media(max-width:600px){
+  #cover.hero{min-height:100svh;height:100svh;}
+  #cover .cover-layout{min-height:560px;padding:24px 18px 30px;}
+  #cover .cover-watermark{font-size:clamp(2.25rem,9vw,3.8rem);}
+  #cover .cover-watermark span:nth-child(2){transform:translateX(-16%);}
+  #cover .cover-portrait{left:-8%;bottom:5%;width:min(62vw,290px);height:min(49vh,410px);}
+  #cover .cover-content{top:22%;left:31%;right:3%;}
+  #cover .cover-personal{margin-left:.1em;font-size:clamp(1.8rem,7.5vw,3rem);}
+  #cover .cover-personal span:first-child{-webkit-text-stroke-width:1px;}
+  #cover .cover-title{font-size:clamp(2.6rem,10vw,4rem);letter-spacing:-.09em;}
+  #cover .cover-year{gap:8px;margin:14px .15em 0 0;font-size:clamp(1.3rem,5.5vw,1.9rem);}
+  #cover .cover-year span{left:34%;right:calc(2.2em + 8px);height:2px;}
+  #cover .cover-name{margin-top:10px;font-size:clamp(.9rem,3.8vw,1.15rem);}
+  #cover .cover-enter-link{margin-top:14px;padding:10px 14px;font-size:.78rem;}
+}
+@media(max-width:360px){
+  #cover .cover-content{left:29%;right:2%;}
+  #cover .cover-title{font-size:clamp(2.4rem,10vw,2.8rem);}
+  #cover .cover-watermark{font-size:2.7rem;}
+}
+@media(max-width:520px){
+  #about > .wrap.profile{grid-template-columns:minmax(0,1fr);}
+  #about .profile-visual{width:min(128px,38vw);max-width:100%;margin-inline:auto;}
+  #about .profile-body{width:100%;}
+  #about .profile-body>p{text-align:left;text-justify:auto;}
+}
+.skip-link{
+  position:fixed;z-index:60;top:10px;left:10px;transform:translateY(-160%);
+  padding:10px 14px;border-radius:6px;background:#183247;color:#fff;
+  font-size:.9rem;font-weight:600;text-decoration:none;
+}
+.skip-link:focus{transform:translateY(0);}
+:focus-visible{outline:3px solid #3A86C8;outline-offset:4px;}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important;}
+  *,*::before,*::after{
+    animation-duration:.01ms!important;animation-iteration-count:1!important;
+    scroll-behavior:auto!important;transition-duration:.01ms!important;
+  }
+}
+</style>
+</head>
+<body>
+
+<section class="hero cover-enter" id="cover">
+  <div class="wrap cover-layout">
+    <div class="cover-watermark" aria-hidden="true">
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+      <span>PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO</span>
+    </div>
+    <figure class="cover-portrait"><img src="full.PNG" alt="Foto full body Dini Maharani Salsabillah"></figure>
+    <div class="cover-content">
+      <p class="cover-personal"><span>Pe</span><span>rsonal</span></p>
+      <h1 class="display cover-title">Portfolio</h1>
+      <p class="cover-year"><span aria-hidden="true"></span>2026</p>
+      <p class="cover-name">Dini Maharani Salsabillah</p>
+      <button class="cover-enter-link" id="enter-portfolio" type="button">Explore Portfolio <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+</section>
+
+<main id="portfolio-content" hidden>
+<a class="skip-link" href="#about">Skip to main content</a>
+<nav class="site-nav" aria-label="Primary navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#cover">Dini Maharani Salsabillah</a>
+    <div class="nav-links">
+      <a href="#cover">HOME</a>
+      <a href="#about">ABOUT ME</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#skills">TOOLS &amp; SKILLS</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#achievements">ACHIEVEMENTS</a>
+      <a href="#training">TRAINING &amp; CERTIFICATION</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </div>
+</nav>
+
+<section class="profile" id="about">
+  <div class="wrap profile">
+    <!-- ===== FOTO 2: PROFILE ===== -->
+    <div class="profile-visual">
+      <figure class="profile-portrait"><img src="pas.jpeg" alt="Foto profil Dini Maharani Salsabillah"></figure>
+    </div>
+    <div class="profile-body">
+      <u class="head">PROFILE</u>
+      <h1 tabindex="-1">Dini Maharani Salsabillah, S.T.P.</h1>
+      <p>Fresh graduate in Agricultural Technology from Sriwijaya University with a GPA of 3.92/4.00 and experience in <strong>administrative support, data management, and operational reporting</strong>. Experienced in collecting, processing, verifying, and analyzing data, maintaining administrative records, and preparing periodic reports. Proficient in <strong>Microsoft Office, particularly Excel, and Google Sheets</strong> to support data processing, reporting, and administrative activities. Demonstrates strong <strong>attention to detail, analytical thinking, organizational skills, and responsibility</strong>, with the ability to work independently and collaboratively.</p>
+      <div class="chips" style="margin-top:12px;">
+        <span class="chip">Administrative Support</span>
+        <span class="chip">Data Management &amp; Processing</span>
+        <span class="chip">Microsoft Excel &amp; Spreadsheet</span>
+        <span class="chip">Data Verification &amp; Reporting</span>
+      </div>
+      <div class="contacts">
+        <a class="pill mail" href="mailto:dinimaharanisaldabila@gmail.com"><span class="contact-top"><img class="contact-icon" src="https://img.icons8.com/color/96/gmail-new.png" alt=""><span class="contact-arrow" aria-hidden="true">↗</span></span><span class="contact-rule"></span><span class="contact-detail">dinimaharanisaldabila@gmail.com</span></a>
+        <a class="pill wa" href="https://wa.me/6285225206415" target="_blank" rel="noopener"><span class="contact-top"><img class="contact-icon" src="https://img.icons8.com/color/96/whatsapp--v1.png" alt=""><span class="contact-arrow" aria-hidden="true">↗</span></span><span class="contact-rule"></span><span class="contact-detail">+62 852-2520-6415</span></a>
+        <a class="pill li" href="https://linkedin.com/in/dinimaharanis" target="_blank" rel="noopener"><span class="contact-top"><img class="contact-icon" src="https://img.icons8.com/color/48/linkedin.png" alt=""><span class="contact-arrow" aria-hidden="true">↗</span></span><span class="contact-rule"></span><span class="contact-detail">Dini Maharani Salsabillah</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="education" id="education">
+  <div class="wrap">
+    <div class="sec-head"><u class="head">EDUCATION</u></div>
+    <div class="card edu-card">
+      <!-- ===== FOTO 3: EDUCATION ===== -->
+      <div class="photo-slot">
+        <img src="unsri.PNG" alt="Logo Universitas Sriwijaya">
+      </div>
+      <div class="edu-info">
+        <h3>Sriwijaya University</h3>
+        <p>Bachelor of Agricultural Technology — Agricultural Engineering</p>
+        <p>Aug 2022 – Aug 2026</p>
+        <div class="gpa">GPA 3.92 / 4,00</div>
+      </div>
+    </div>
+    <div class="card edu-card">
+      <div class="photo-slot">
+        <img src="man.jpeg" alt="Logo MAN 3 Palembang">
+      </div>
+      <div class="edu-info">
+        <h3>MAN 3 Palembang</h3>
+        <p>Sciences Major</p>
+        <p>Jul 2019 - May 2022</p>
+        <div class="gpa">Final Score 94,50</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <div class="wrap">
+    <div class="sec-head"><u class="head">WORK EXPERIENCE</u></div>
+
+    <div class="card job farmers-development-detail">
+      <!-- ===== FOTO 4: WORK EXPERIENCE - EDUFARMERS ===== -->
+      <div class="fda-heading">
+        <div class="fda-profile-logo"><img src="edufarmers.jpeg" alt="Edufarmers International Foundation logo"></div>
+        <div class="fda-heading-main">
+          <div class="fda-period">Sep 2024 – Jan 2025</div>
+          <h3>Farmers Development Associate</h3>
+          <div class="fda-org">Edufarmers International Foundation</div>
+          <div class="fda-program">MSIB Program</div>
+        </div>
+      </div>
+      <p class="fda-summary">Managed and analyzed operational and financial data for partner farmers, maintaining accurate records and preparing monthly performance reports. Communicated with partners from diverse backgrounds, monitored SOP compliance, compared actual performance against targets, and coordinated follow-up actions to support operational improvements.</p>
+
+      <div class="fda-details">
+        <div class="fda-expanded-content">
+      <div class="fda-section" aria-labelledby="fda-core-skills">
+        <h4 id="fda-core-skills">Core Skills</h4>
+        <div class="fda-skill-grid">
+          <article class="fda-skill"><h5>Accuracy &amp; Data Integrity</h5><p>Maintained accurate operational and financial records for partner farmers.</p></article>
+          <article class="fda-skill"><h5>Communication &amp; Stakeholder Relations</h5><p>Communicated effectively with partners and stakeholders from diverse backgrounds.</p></article>
+          <article class="fda-skill"><h5>SOP Monitoring &amp; Compliance</h5><p>Monitored adherence to standard operating procedures and followed up on identified issues.</p></article>
+          <article class="fda-skill"><h5>Reporting &amp; Documentation</h5><p>Prepared monthly performance reports and maintained organized supporting records.</p></article>
+          <article class="fda-skill"><h5>Data Analysis &amp; Performance Monitoring</h5><p>Compared actual performance against targets and identified key variances.</p></article>
+          <article class="fda-skill"><h5>Coordination &amp; Problem-Solving</h5><p>Collaborated with internal teams and external stakeholders to address issues and support operational improvements.</p></article>
+        </div>
+      </div>
+
+      <div class="fda-section" aria-labelledby="fda-work-process">
+        <h4 id="fda-work-process">Work Process</h4>
+        <ol class="fda-process">
+          <li><strong>Data Collection</strong><span>Gathered operational, financial, and field data from 36 partner farmers.</span></li>
+          <li><strong>Verification &amp; Recording</strong><span>Organized and checked data in spreadsheets for accuracy and consistency.</span></li>
+          <li><strong>Analysis &amp; Monitoring</strong><span>Compared actual vs. plan and identified key variances.</span></li>
+          <li><strong>Reporting</strong><span>Compiled monthly reports and recommendations for follow-up actions.</span></li>
+        </ol>
+      </div>
+
+      <div class="fda-section" aria-labelledby="fda-key-results">
+        <h4 id="fda-key-results">Key Results</h4>
+        <div class="fda-result-grid">
+          <article class="fda-result"><strong>100%</strong><span>Data accuracy</span><p>For 36 partner farmers</p></article>
+          <article class="fda-result"><strong>25%</strong><span>Increase in farmer knowledge</span><p>Through program support and training</p></article>
+          <article class="fda-result"><strong>30%</strong><span>Improvement in SOP compliance</span><p>Across partner farmers</p></article>
+          <article class="fda-result"><strong>45%</strong><span>Productivity &amp; profitability boost</span><p>In crop yield and net income of mentored farmers</p></article>
+        </div>
+      </div>
+
+      <div class="fda-section" aria-labelledby="fda-documentation">
+        <h4 id="fda-documentation">Selected Documentation</h4>
+        <div class="fda-document-grid">
+          <figure class="fda-document"><img class="fda-document-image" src="ngajarffs.jpeg" alt="Farmer Field School facilitation and training session"><figcaption><strong>Farmer Field School Facilitation</strong><br>Delivering training sessions to farmers and explaining program materials clearly.</figcaption></figure>
+          <figure class="fda-document"><img class="fda-document-image" src="fotobpp.jpeg" alt="Stakeholder coordination meeting at the Agricultural Extension Center in Pacet, Cianjur"><figcaption><strong>Stakeholder Coordination</strong><br>Coordination meeting with agricultural extension officers at the Agricultural Extension Center (BPP) Pacet, Cianjur.</figcaption></figure>
+          <figure class="fda-document"><img class="fda-document-image" src="laporanedu.jpeg" alt="Monthly monitoring report dashboard showing participant baseline and endline performance"><figcaption><strong>Monthly Monitoring Report</strong><br>Dashboard tracking baseline vs. endline performance of program participants (Looker Studio).</figcaption></figure>
+          <figure class="fda-document"><img class="fda-document-image" src="ffs.jpeg" alt="Engagement and relationship building with partner farmers during field school activities"><figcaption><strong>Farmer Engagement &amp; Relationship Building</strong><br>Building direct and trusting relationships with partner farmers during field school activities.</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="fda-cert-tools-grid">
+      <div class="fda-section" aria-labelledby="fda-certificate">
+        <h4 id="fda-certificate">Certificate</h4>
+        <div class="fda-certificate-grid">
+          <figure class="fda-certificate">
+            <a href="sertifmsib.jpeg" target="_blank" rel="noopener">
+              <img class="fda-document-image" src="sertifmsib.jpeg" alt="Certificate of Completion MSIB Program Edufarmers International Foundation">
+            </a>
+            <figcaption>Certificate of Completion – MSIB Program, Edufarmers International Foundation</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="fda-section" aria-labelledby="fda-tools">
+        <h4 id="fda-tools">Tools</h4>
+        <div class="tools-grid fda-tools" aria-label="Tools used">
+          <div class="tool" role="img" aria-label="Google Sheets" title="Google Sheets"><img src="https://img.icons8.com/color/96/google-sheets.png" alt="Google Sheets" loading="lazy"></div>
+          <div class="tool" role="img" aria-label="Google Docs" title="Google Docs"><img src="https://img.icons8.com/color/96/google-docs.png" alt="Google Docs" loading="lazy"></div>
+          <div class="tool" role="img" aria-label="Microsoft Excel" title="Microsoft Excel"><img src="https://img.icons8.com/color/96/microsoft-excel-2019--v2.png" alt="Microsoft Excel" loading="lazy"></div>
+          <div class="tool" role="img" aria-label="Microsoft Word" title="Microsoft Word"><img src="https://img.icons8.com/color/96/microsoft-word-2019--v2.png" alt="Microsoft Word" loading="lazy"></div>
+          <div class="tool" role="img" aria-label="Microsoft PowerPoint" title="Microsoft PowerPoint"><img src="https://img.icons8.com/color/96/microsoft-powerpoint-2019--v2.png" alt="Microsoft PowerPoint" loading="lazy"></div>
+          <div class="tool" role="img" aria-label="Canva" title="Canva"><img src="https://static.canva.com/domain-assets/canva/static/images/android-192x192-2.png" alt="Canva" loading="lazy"></div>
+          <div class="tool" role="img" aria-label="Google Forms" title="Google Forms"><img src="https://img.icons8.com/color/96/google-forms.png" alt="Google Forms" loading="lazy"></div>
+          <div class="tool" role="img" aria-label="Google Looker Studio" title="Google Looker Studio"><img src="https://img.icons8.com/color/96/google-data-studio.png" alt="Google Looker Studio" loading="lazy"></div>
+          <div class="tool" role="img" aria-label="Google Drive" title="Google Drive"><img src="https://img.icons8.com/color/96/google-drive--v2.png" alt="Google Drive" loading="lazy"></div>
+          <div class="tool" role="img" aria-label="Zoom" title="Zoom"><img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Zoom" loading="lazy"></div>
+        </div>
+      </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card job agricultural-instructor-detail">
+      <!-- ===== FOTO 5: WORK EXPERIENCE - AGRICULTURAL INSTRUCTOR ===== -->
+      <div class="fda-heading">
+        <div class="fda-profile-logo"><img src="smkpp.png" alt="SMKN PP Cianjur logo"></div>
+        <div class="fda-heading-main">
+          <div class="fda-period">Nov 2024 – Dec 2024</div>
+          <h3>Agricultural Instructor</h3>
+          <div class="fda-org">SMKN PP Cianjur</div>
+        </div>
+      </div>
+      <p class="fda-summary">Delivered practical agricultural training and taught cultivation techniques and agricultural economics, including farm financial management, to vocational high school students. Developed teaching materials covering agribusiness, profitability, and financial analysis, including income, costs, and profit and loss.</p>
+
+      <div class="fda-details">
+        <div class="fda-expanded-content">
+          <div class="fda-section" aria-labelledby="ai-core-skills">
+            <h4 id="ai-core-skills">Core Skills</h4>
+            <div class="fda-skill-grid ai-skill-grid">
+              <article class="fda-skill"><h5>Financial Literacy Education</h5><p>Taught income, cost, and profit-and-loss concepts, including farm financial management.</p></article>
+              <article class="fda-skill"><h5>Communication &amp; Presentation</h5><p>Explained technical and financial concepts clearly in both classroom and practical sessions.</p></article>
+              <article class="fda-skill"><h5>Learning Material Development</h5><p>Designed structured teaching materials on agribusiness, profitability, and financial analysis.</p></article>
+              <article class="fda-skill"><h5>Practical Training Delivery</h5><p>Facilitated hands-on training in cultivation techniques and agricultural economics.</p></article>
+              <article class="fda-skill"><h5>Mentoring &amp; Guidance</h5><p>Guided students through hands-on practice and supported their learning progress.</p></article>
+              <article class="fda-skill"><h5>Agribusiness Knowledge</h5><p>Applied subject knowledge in cultivation techniques, agricultural economics, and farm business profitability.</p></article>
+            </div>
+          </div>
+
+          <div class="fda-section" aria-labelledby="ai-documentation">
+            <h4 id="ai-documentation">Documentation</h4>
+            <div class="fda-document-grid ai-document-grid">
+              <figure class="fda-document"><img class="fda-document-image" src="ngajarsmk.jpeg" alt="Agricultural Instructor teaching agribusiness and farm financial management in a classroom" loading="lazy"><figcaption><strong>Classroom Teaching</strong><br>Delivering lessons on agribusiness and farm financial management in the classroom.</figcaption></figure>
+              <figure class="fda-document"><img class="fda-document-image" src="ngajarkelas.jpeg" alt="Agricultural Instructor guiding and interacting with students during learning activities" loading="lazy"><figcaption><strong>Student Engagement</strong><br>Guiding and interacting with students during learning activities.</figcaption></figure>
+              <figure class="fda-document"><img class="fda-document-image" src="closingsmk.jpeg" alt="Closing session of the Agricultural Instructor program at SMKN PP Cianjur" loading="lazy"><figcaption><strong>Program Closing</strong><br>Closing session of the teaching program at SMKN PP Cianjur.</figcaption></figure>
+            </div>
+          </div>
+
+          <div class="fda-cert-tools-grid">
+            <div class="fda-section" aria-labelledby="ai-certificate">
+              <h4 id="ai-certificate">Certificate</h4>
+              <div class="fda-certificate-grid">
+                <figure class="fda-certificate">
+                  <a href="sertifngajar.jpeg" target="_blank" rel="noopener">
+                    <img class="fda-document-image" src="sertifngajar.jpeg" alt="Certificate of recognition for the Agricultural Instructor program at SMKN PP Cianjur" loading="lazy">
+                  </a>
+                  <figcaption>Certificate of recognition for the Agricultural Instructor program at SMKN PP Cianjur.</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="fda-section" aria-labelledby="ai-tools">
+              <h4 id="ai-tools">Tools</h4>
+              <div class="tools-grid fda-tools ai-tools" aria-label="Tools used">
+                <div class="tool" role="img" aria-label="Microsoft PowerPoint" title="Microsoft PowerPoint"><img src="https://img.icons8.com/color/96/microsoft-powerpoint-2019--v2.png" alt="Microsoft PowerPoint" loading="lazy"></div>
+                <div class="tool" role="img" aria-label="Microsoft Word" title="Microsoft Word"><img src="https://img.icons8.com/color/96/microsoft-word-2019--v2.png" alt="Microsoft Word" loading="lazy"></div>
+                <div class="tool" role="img" aria-label="Microsoft Excel" title="Microsoft Excel"><img src="https://img.icons8.com/color/96/microsoft-excel-2019--v2.png" alt="Microsoft Excel" loading="lazy"></div>
+                <div class="tool" role="img" aria-label="Google Forms" title="Google Forms"><img src="https://img.icons8.com/color/96/google-forms.png" alt="Google Forms" loading="lazy"></div>
+                <div class="tool" role="img" aria-label="Google Drive" title="Google Drive"><img src="https://img.icons8.com/color/96/google-drive--v2.png" alt="Google Drive" loading="lazy"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card job assistant-lecturer-detail">
+      <div class="fda-heading">
+        <div class="fda-profile-logo"><img src="unsri.PNG" alt="Sriwijaya University logo"></div>
+        <div class="fda-heading-main">
+          <div class="fda-period">Feb 2025 – Dec 2025</div>
+          <h3>Assistant Lecturer</h3>
+          <div class="fda-org">Sriwijaya University</div>
+          <div class="al-course-tags" aria-label="Courses">
+            <span class="chip">Greenhouse Technology</span>
+            <span class="chip">Agricultural Instrumentation &amp; Control Systems</span>
+            <span class="chip">Agricultural Workshop</span>
+          </div>
+        </div>
+      </div>
+      <p class="fda-summary">Served as an assistant lecturer for three courses: <strong>Greenhouse Technology</strong>, <strong>Agricultural Instrumentation &amp; Control Systems</strong>, and <strong>Agricultural Workshop</strong>. Prepared and explained practical session materials, developed worksheets, and ensured activities were conducted according to established procedures. Managed practical session records, compiled results, and evaluated student assignments while maintaining accurate and well-organized assessment records.</p>
+
+      <div class="fda-details">
+        <div class="fda-expanded-content">
+          <div class="fda-section" aria-labelledby="al-core-skills">
+            <h4 id="al-core-skills">Core Skills</h4>
+            <div class="fda-skill-grid ai-skill-grid">
+              <article class="fda-skill"><h5>Accuracy &amp; Record Management</h5><p>Maintained accurate and well-organized records of practical sessions and student assessments.</p></article>
+              <article class="fda-skill"><h5>Assessment &amp; Evaluation</h5><p>Evaluated student assignments and compiled practical session results.</p></article>
+              <article class="fda-skill"><h5>Procedure Compliance</h5><p>Ensured practical activities were conducted in accordance with established procedures.</p></article>
+              <article class="fda-skill"><h5>Instructional Material Preparation</h5><p>Prepared practical session materials and developed worksheets to support student learning.</p></article>
+              <article class="fda-skill"><h5>Communication &amp; Explanation</h5><p>Explained practical materials and technical concepts clearly to students.</p></article>
+              <article class="fda-skill"><h5>Multi-Course Coordination</h5><p>Supported practical sessions across three courses while keeping documentation consistent and organized.</p></article>
+            </div>
+          </div>
+
+          <div class="fda-section" aria-labelledby="al-documentation">
+            <h4 id="al-documentation">Documentation</h4>
+            <div class="al-document-group">
+              <h5>Practical Activity</h5>
+              <div class="fda-document-grid al-document-grid">
+              <figure class="fda-document">
+                <button class="al-document-open" type="button" aria-label="Enlarge Greenhouse Technology practical activity photo"><img class="fda-document-image" src="trk.jpeg" alt="Students participating in a Greenhouse Technology practical session at Sriwijaya University" loading="lazy"></button>
+                <figcaption><strong>Greenhouse Technology – Practical Activity</strong><br>Supporting students during a practical session in Greenhouse Technology.</figcaption>
+              </figure>
+              <figure class="fda-document">
+                <button class="al-document-open" type="button" aria-label="Enlarge Agricultural Workshop practical activity photo"><img class="fda-document-image" src="bengkel.jpeg" alt="Students participating in an Agricultural Workshop practical session at Sriwijaya University" loading="lazy"></button>
+                <figcaption><strong>Agricultural Workshop – Practical Activity</strong><br>Guiding students during a practical session in Agricultural Workshop.</figcaption>
+              </figure>
+              <figure class="fda-document">
+                <button class="al-document-open" type="button" aria-label="Enlarge Agricultural Instrumentation &amp; Control Systems practical activity photo"><img class="fda-document-image" src="instru.jpeg" alt="Students participating in an Agricultural Instrumentation &amp; Control Systems practical session at Sriwijaya University" loading="lazy"></button>
+                <figcaption><strong>Agricultural Instrumentation &amp; Control Systems – Practical Activity</strong><br>Supporting students during a practical session in Agricultural Instrumentation &amp; Control Systems.</figcaption>
+              </figure>
+              </div>
+            </div>
+            <div class="al-document-group">
+              <h5>Certificates</h5>
+              <div class="fda-document-grid al-document-grid">
+              <figure class="fda-document">
+                <button class="al-document-open al-certificate" type="button" aria-label="Enlarge Greenhouse Technology Assistant Lecturer certificate"><img class="fda-document-image" src="sertifasdostrk.jpeg" alt="Assistant Lecturer certificate Greenhouse Technology Sriwijaya University" loading="lazy"></button>
+                <figcaption><strong>Greenhouse Technology – Certificate</strong><br>Assistant Lecturer certificate for Greenhouse Technology, Sriwijaya University.</figcaption>
+              </figure>
+              <figure class="fda-document">
+                <button class="al-document-open al-certificate" type="button" aria-label="Enlarge Agricultural Workshop Assistant Lecturer certificate"><img class="fda-document-image" src="sertifasdosbengkel.jpeg" alt="Assistant Lecturer certificate Agricultural Workshop Sriwijaya University" loading="lazy"></button>
+                <figcaption><strong>Agricultural Workshop – Certificate</strong><br>Assistant Lecturer certificate for Agricultural Workshop, Sriwijaya University.</figcaption>
+              </figure>
+              <figure class="fda-document">
+                <button class="al-document-open al-certificate" type="button" aria-label="Enlarge Agricultural Instrumentation &amp; Control Systems Assistant Lecturer certificate"><img class="fda-document-image" src="sertifasdosinstru.jpeg" alt="Assistant Lecturer certificate Agricultural Instrumentation &amp; Control Systems Sriwijaya University" loading="lazy"></button>
+                <figcaption><strong>Agricultural Instrumentation &amp; Control Systems – Certificate</strong><br>Assistant Lecturer certificate for Agricultural Instrumentation &amp; Control Systems, Sriwijaya University.</figcaption>
+              </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="fda-section" aria-labelledby="al-tools">
+            <h4 id="al-tools">Tools</h4>
+            <div class="tools-grid fda-tools" aria-label="Tools used">
+              <div class="tool" role="img" aria-label="Google Sheets" title="Google Sheets"><img src="https://img.icons8.com/color/96/google-sheets.png" alt="Google Sheets" loading="lazy"></div>
+              <div class="tool" role="img" aria-label="Microsoft Excel" title="Microsoft Excel"><img src="https://img.icons8.com/color/96/microsoft-excel-2019--v2.png" alt="Microsoft Excel" loading="lazy"></div>
+              <div class="tool" role="img" aria-label="Microsoft Word" title="Microsoft Word"><img src="https://img.icons8.com/color/96/microsoft-word-2019--v2.png" alt="Microsoft Word" loading="lazy"></div>
+              <div class="tool" role="img" aria-label="Microsoft PowerPoint" title="Microsoft PowerPoint"><img src="https://img.icons8.com/color/96/microsoft-powerpoint-2019--v2.png" alt="Microsoft PowerPoint" loading="lazy"></div>
+              <div class="tool" role="img" aria-label="Canva" title="Canva"><img src="https://static.canva.com/domain-assets/canva/static/images/android-192x192-2.png" alt="Canva" loading="lazy"></div>
+              <div class="tool" role="img" aria-label="Zoom" title="Zoom"><img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Zoom" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="organizational" id="organizational">
+  <div class="wrap">
+    <div class="sec-head"><u class="head">ORGANIZATIONAL EXPERIENCE</u></div>
+
+    <div class="card job hrd-coordinator-detail">
+      <div class="fda-heading">
+        <div class="fda-profile-logo"><img src="iaas.png" alt="International Association of Agricultural Students logo"></div>
+        <div class="fda-heading-main">
+          <div class="fda-period">2024/2025</div>
+          <h3>Coordinator of Human Resources Development Department</h3>
+          <div class="fda-org">International Association of Agricultural Students (IAAS) – Local Committee Sriwijaya University</div>
+        </div>
+      </div>
+      <p class="fda-summary">Coordinated member recruitment, selection, onboarding, and development to strengthen organizational capacity. Monitored member engagement and performance, facilitated internal development initiatives, and supported member retention and effective team coordination.</p>
+
+      <div class="fda-details">
+        <div class="fda-expanded-content">
+          <div class="fda-section" aria-labelledby="hrd-core-skills">
+            <h4 id="hrd-core-skills">Core Skills</h4>
+            <div class="fda-skill-grid dld-skill-grid">
+              <article class="fda-skill"><h5>Interviewing &amp; Selection</h5><p>Interviewed 90+ applicants and oversaw the selection process from screening to final decision.</p></article>
+              <article class="fda-skill"><h5>Onboarding &amp; Member Integration</h5><p>Led the BOS onboarding program to help new members adapt and become part of the organization.</p></article>
+              <article class="fda-skill"><h5>Engagement &amp; Retention</h5><p>Strengthened member engagement through internal bonding programs and events.</p></article>
+              <article class="fda-skill"><h5>Coordination &amp; Performance Monitoring</h5><p>Monitored program progress through weekly routines and coordinated departments for effective talent allocation.</p></article>
+            </div>
+          </div>
+
+          <div class="fda-section" aria-labelledby="hrd-documentation">
+            <h4 id="hrd-documentation">Documentation</h4>
+            <div class="dld-group-grid">
+              <figure class="dld-document-group hrd-document-group">
+                <h5>IAAS Looking for New Member</h5>
+                <div class="dld-photo-pair">
+                  <button class="hrd-document-open hrd-photo-contain" type="button" aria-label="Enlarge IAAS Looking for New Member, photo 1"><img class="fda-document-image" src="ilfnm1.jpeg" alt="IAAS Looking for New Member, photo 1: recruitment promotion poster shared on social media" loading="lazy"></button>
+                  <button class="hrd-document-open hrd-photo-contain" type="button" aria-label="Enlarge IAAS Looking for New Member, photo 2"><img class="fda-document-image" src="ilfnm2.jpeg" alt="IAAS Looking for New Member, photo 2: recruitment promotion poster shared on social media" loading="lazy"></button>
+                </div>
+                <figcaption>Promoting recruitment through posters on Instagram and social media, with open Q&amp;A sessions for prospective members.</figcaption>
+              </figure>
+              <figure class="dld-document-group hrd-document-group">
+                <h5>Recruitment Interviews</h5>
+                <div class="dld-photo-pair">
+                  <button class="hrd-document-open" type="button" aria-label="Enlarge Recruitment Interviews, photo 1"><img class="fda-document-image" src="fotowwchrd.jpeg" alt="Recruitment Interviews, photo 1: interviewing a prospective IAAS member" loading="lazy"></button>
+                  <button class="hrd-document-open" type="button" aria-label="Enlarge Recruitment Interviews, photo 2"><img class="fda-document-image" src="wwchrd.jpeg" alt="Recruitment Interviews, photo 2: group photo with the advisor, organization members, and applicants" loading="lazy"></button>
+                </div>
+                <figcaption>Interviewing prospective members, including a group photo with the advisor, fellow organization members, and other applicants.</figcaption>
+              </figure>
+              <figure class="dld-document-group hrd-document-group">
+                <h5>Weekly Coordination Meeting</h5>
+                <div class="dld-photo-pair">
+                  <button class="hrd-document-open hrd-photo-contain" type="button" aria-label="Enlarge Weekly Coordination Meeting, photo 1"><img class="fda-document-image" src="meeting1.jpeg" alt="Weekly Coordination Meeting, photo 1: screenshot of members reviewing work program progress online" loading="lazy"></button>
+                  <button class="hrd-document-open hrd-photo-contain" type="button" aria-label="Enlarge Weekly Coordination Meeting, photo 2"><img class="fda-document-image" src="meeting2.jpeg" alt="Weekly Coordination Meeting, photo 2: screenshot of members reviewing work program progress online" loading="lazy"></button>
+                </div>
+                <figcaption>Online meeting to review work program progress and strengthen bonding among members.</figcaption>
+              </figure>
+              <figure class="dld-document-group hrd-document-group">
+                <h5>IAAS Funday</h5>
+                <div class="dld-photo-pair">
+                  <button class="hrd-document-open" type="button" aria-label="Enlarge IAAS Funday, photo 1"><img class="fda-document-image" src="funday1.jpeg" alt="IAAS Funday, photo 1: members celebrating the IAAS LC Sriwijaya University anniversary" loading="lazy"></button>
+                  <button class="hrd-document-open" type="button" aria-label="Enlarge IAAS Funday, photo 2"><img class="fda-document-image" src="funday2.jpeg" alt="IAAS Funday, photo 2: members taking part in team games" loading="lazy"></button>
+                </div>
+                <figcaption>Member bonding event celebrating the anniversary of IAAS LC Sriwijaya University, featuring a group photo and team games.</figcaption>
+              </figure>
+              <figure class="dld-document-group hrd-document-group">
+                <h5>YACT Sriwijaya – IAAS Goes to School</h5>
+                <div class="dld-photo-pair">
+                  <button class="hrd-document-open" type="button" aria-label="Enlarge YACT Sriwijaya – IAAS Goes to School, photo 1"><img class="fda-document-image" src="yactout.jpeg" alt="YACT Sriwijaya – IAAS Goes to School, photo 1: explaining the Drop Saver DIY material at SMA Negeri 1 Indralaya" loading="lazy"></button>
+                  <button class="hrd-document-open" type="button" aria-label="Enlarge YACT Sriwijaya – IAAS Goes to School, photo 2"><img class="fda-document-image" src="yactin.jpeg" alt="YACT Sriwijaya – IAAS Goes to School, photo 2: demonstrating the Drop Saver DIY process at SMA Negeri 1 Indralaya" loading="lazy"></button>
+                </div>
+                <figcaption>Supporting the project department at SMA Negeri 1 Indralaya on the theme "Drop Saver DIY: Reducing Waste, Reusing Water," including explaining the material and demonstrating the process.</figcaption>
+              </figure>
+              <figure class="dld-document-group hrd-document-group">
+                <h5>Certificate</h5>
+                <button class="hrd-document-open hrd-certificate-open" type="button" aria-label="Enlarge Human Resources Development Department Coordinator certificate">
+                  <img class="fda-document-image" src="sertifhrd.jpeg" alt="Certificate of service as Coordinator of Human Resources Development Department, IAAS LC Sriwijaya University, 2024/2025" loading="lazy">
+                </button>
+                <figcaption>Certificate of service as Coordinator of Human Resources Development Department, IAAS LC Sriwijaya University, 2024/2025.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card job deputy-local-director-detail">
+      <div class="fda-heading">
+        <div class="fda-profile-logo"><img src="iaas.png" alt="International Association of Agricultural Students logo"></div>
+        <div class="fda-heading-main">
+          <div class="fda-period">2025/2026</div>
+          <h3>Deputy Local Director</h3>
+          <div class="fda-org">International Association of Agricultural Students (IAAS) – Local Committee Sriwijaya University</div>
+        </div>
+      </div>
+      <p class="fda-summary">Assisted in overseeing organizational operations, coordinating activities across departments, and monitoring work program implementation. Contributed to organizational planning, internal evaluation, and alignment of departmental activities with organizational objectives.</p>
+
+      <div class="fda-details">
+        <div class="fda-expanded-content">
+          <div class="fda-section" aria-labelledby="dld-core-skills">
+            <h4 id="dld-core-skills">Core Skills</h4>
+            <div class="fda-skill-grid dld-skill-grid">
+              <article class="fda-skill"><h5>Leadership &amp; Coordination</h5><p>Worked with the Local Director and cross-department teams to align programs and information flow.</p></article>
+              <article class="fda-skill"><h5>Public Speaking &amp; Representation</h5><p>Represented the organization in presentations to new students and new members.</p></article>
+              <article class="fda-skill"><h5>Program Evaluation</h5><p>Reviewed work programs to support better planning and execution.</p></article>
+              <article class="fda-skill"><h5>Interpersonal Skills</h5><p>Supported the interview process for prospective members and engaged with members and external partners.</p></article>
+            </div>
+          </div>
+
+          <div class="fda-section" aria-labelledby="dld-documentation">
+            <h4 id="dld-documentation">Documentation</h4>
+            <div class="dld-group-grid">
+              <figure class="dld-document-group">
+                <h5>PKKMB Representation</h5>
+                <div class="dld-photo-pair">
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge PKKMB Representation, photo 1"><img class="fda-document-image dld-activity-image" src="pkkmb.jpeg" alt="PKKMB Representation, photo 1" loading="lazy"></button>
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge PKKMB Representation, photo 2"><img class="fda-document-image dld-activity-image" src="pkkmbfoto.jpeg" alt="PKKMB Representation, photo 2" loading="lazy"></button>
+                </div>
+                <figcaption>Presenting and promoting IAAS recruitment at the PKKMB of the Faculty of Agriculture, Sriwijaya University.</figcaption>
+              </figure>
+              <figure class="dld-document-group">
+                <h5>New Member Orientation</h5>
+                <div class="dld-photo-pair">
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge New Member Orientation, photo 1"><img class="fda-document-image dld-activity-image" src="newmember.jpeg" alt="New Member Orientation, photo 1" loading="lazy"></button>
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge New Member Orientation, photo 2"><img class="fda-document-image dld-activity-image" src="newmember2.jpeg" alt="New Member Orientation, photo 2" loading="lazy"></button>
+                </div>
+                <figcaption>Presenting an overview of IAAS LC Sriwijaya University to new members.</figcaption>
+              </figure>
+              <figure class="dld-document-group">
+                <h5>Recruitment Interviews</h5>
+                <div class="dld-photo-pair">
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge Recruitment Interviews, photo 1"><img class="fda-document-image dld-activity-image" src="wwcdld.png" alt="Recruitment Interviews, photo 1" loading="lazy"></button>
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge Recruitment Interviews, photo 2"><img class="fda-document-image dld-activity-image" src="fotowwcdld.jpeg" alt="Recruitment Interviews, photo 2" loading="lazy"></button>
+                </div>
+                <figcaption>Assisting the HRD department in interviewing prospective IAAS members.</figcaption>
+              </figure>
+              <figure class="dld-document-group">
+                <h5>Building on Success (BOS)</h5>
+                <div class="dld-photo-pair">
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge Building on Success (BOS), photo 1"><img class="fda-document-image dld-activity-image" src="bosfoto.jpeg" alt="Building on Success (BOS), photo 1" loading="lazy"></button>
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge Building on Success (BOS), photo 2"><img class="fda-document-image dld-activity-image" src="bosiaas.jpeg" alt="Building on Success (BOS), photo 2" loading="lazy"></button>
+                </div>
+                <figcaption>Organizing the BOS program together with the President of IAAS Indonesia.</figcaption>
+              </figure>
+              <figure class="dld-document-group">
+                <h5>Expronas Visit</h5>
+                <div class="dld-photo-pair">
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge Expronas Visit, photo 1"><img class="fda-document-image dld-activity-image" src="expronas.jpeg" alt="Expronas Visit, photo 1" loading="lazy"></button>
+                  <button class="dld-photo-open" type="button" aria-label="Enlarge Expronas Visit, photo 2"><img class="fda-document-image dld-activity-image" src="expronas2.jpeg" alt="Expronas Visit, photo 2" loading="lazy"></button>
+                </div>
+                <figcaption>Visiting IAAS LC Sriwijaya University members during their internship at JL Farm Hydroponics, Palembang.</figcaption>
+              </figure>
+              <figure class="dld-document-group dld-certificate">
+                <h5>Certificate</h5>
+                <button class="dld-document-open" type="button" aria-label="Enlarge Deputy Local Director certificate">
+                  <img class="fda-document-image" src="sertifdld.jpeg" alt="Certificate Deputy Local Director IAAS LC Sriwijaya University" loading="lazy">
+                </button>
+                <figcaption>Certificate of service as Deputy Local Director, IAAS LC Sriwijaya University, 2025/2026.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card job secretariat-detail">
+      <div class="fda-heading">
+        <div class="fda-profile-logo"><img src="himateta.png" alt="Agricultural Technology Student Association logo"></div>
+        <div class="fda-heading-main">
+          <div class="fda-period">2024/2025</div>
+          <h3>Member of Secretariat Department</h3>
+          <div class="fda-org">Agricultural Technology Student Association</div>
+        </div>
+      </div>
+      <p class="fda-summary">Managed organizational correspondence, administrative records, and document archiving to maintain accurate and organized records. Supported meeting administration and the preparation of organizational documents to ensure smooth administrative processes and effective coordination.</p>
+      <div class="fda-section" aria-labelledby="secretariat-core-skills">
+        <h4 id="secretariat-core-skills">Core Skills</h4>
+        <div class="fda-skill-grid secretariat-skill-grid">
+          <article class="fda-skill"><h5>Administrative Management</h5><p>Managed administrative documents to support the smooth running of organizational activities.</p></article>
+          <article class="fda-skill"><h5>Correspondence &amp; Communication</h5><p>Handled official correspondence in a clear, professional, and timely manner.</p></article>
+          <article class="fda-skill"><h5>Records &amp; Archiving</h5><p>Maintained organized departmental archives so documents could be retrieved easily.</p></article>
+        </div>
+      </div>
+      <div class="fda-section" aria-labelledby="secretariat-certificate">
+        <h4 id="secretariat-certificate">Certificate</h4>
+        <figure class="dld-document-group dld-certificate">
+          <button class="dld-document-open" type="button" aria-label="Enlarge Member of Secretariat Department certificate">
+            <img class="fda-document-image" src="sertifhimateta.jpeg" alt="Certificate Member of Secretariat Department Agricultural Technology Student Association" loading="lazy">
+          </button>
+          <figcaption>Certificate of service as a member of the Secretariat Department, Agricultural Technology Student Association, 2024/2025.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="achievements" id="achievements">
+  <div class="wrap">
+    <div class="sec-head"><u class="head">ACHIEVEMENTS</u></div>
+    <div class="ach-row">
+      <!-- ===== FOTO 12: ACHIEVEMENTS ===== -->
+      <div class="photo-slot"><div class="icon">📷</div><div>Foto penyerahan piagam/medali KOMPAS &amp; MC debat</div></div>
+      <div class="ach-list">
+        <div class="ach-item"><div class="tag">GOLD MEDAL · KOMPAS 2024</div><p>National Science Competition — Biology | GEMANESIA × KOMPAS</p></div>
+        <div class="ach-item"><div class="tag">GOLD MEDAL · KOMPAS 2024</div><p>National Science Competition — Indonesian Language | GEMANESIA × KOMPAS</p></div>
+        <div class="ach-item"><div class="tag">MASTER OF CEREMONIES</div><p>National University Debate Championship 2024 | Sriwijaya University</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="certification" id="training">
+  <div class="wrap">
+    <div class="sec-head"><u class="head">TRAINING &amp; CERTIFICATION</u></div>
+    <ul class="cert-list">
+      <li><span><span class="cert-name">TOEFL ITP Prediction (587)</span> | Englishvit</span><span class="src">Oct 2026</span></li>
+      <li><span><span class="cert-name">Preparing Data for Analysis with Microsoft Excel</span> | Microsoft</span><span class="src">Oct 2026</span></li>
+      <li><span><span class="cert-name">Business Analysis &amp; Process Management</span> | Coursera</span><span class="src">Sep 2026</span></li>
+      <li><span><span class="cert-name">Bootcamp Data Analyst</span> | KarirNex by eBizmark</span><span class="src">Sep 2026</span></li>
+      <li><span><span class="cert-name">Data Analysis Fundamentals</span> | Edufarmers Learning Center</span><span class="src">Sep 2024</span></li>
+      <li><span><span class="cert-name">Business and Financial Management</span> | Edufarmers Learning Center</span><span class="src">Sep 2024</span></li>
+      <li><span><span class="cert-name">Stakeholder Management</span> | Edufarmers Learning Center</span><span class="src">Sep 2024</span></li>
+      <li><span><span class="cert-name">Problem Solving</span> | Edufarmers Learning Center</span><span class="src">Sep 2024</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="sec-head"><u class="head">TOOLS &amp; SKILLS</u></div>
+    <div class="skill-groups">
+      <div>
+        <h4>CORE SKILLS</h4>
+        <div class="chips">
+          <span class="chip">Administrative Support</span>
+          <span class="chip">Data Management &amp; Processing</span>
+          <span class="chip">Data Analysis</span>
+          <span class="chip">Document &amp; Records Management</span>
+          <span class="chip">Administrative &amp; Operational Reporting</span>
+          <span class="chip">Adaptability</span>
+          <span class="chip">Data Verification</span>
+          <span class="chip">Process Monitoring &amp; Evaluation</span>
+          <span class="chip">Target Monitoring</span>
+          <span class="chip">Stakeholder Coordination</span>
+          <span class="chip">Attention to Detail</span>
+          <span class="chip">Problem-Solving</span>
+          <span class="chip">Teamwork &amp; Collaboration</span>
+        </div>
+      </div>
+      <div>
+        <h4>LANGUAGES</h4>
+        <div class="chips">
+          <span class="chip"><img class="language-flag" src="https://flagcdn.com/w40/id.png" alt="Bendera Indonesia">Indonesian — Native</span>
+          <span class="chip"><img class="language-flag" src="https://flagcdn.com/w40/gb.png" alt="Bendera Inggris">English — Advanced</span>
+        </div>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool" role="img" aria-label="Microsoft Excel" tabindex="0"><img src="https://img.icons8.com/color/96/microsoft-excel-2019--v2.png" alt="" loading="lazy"></div>
+      <div class="tool" role="img" aria-label="Microsoft Word" tabindex="0"><img src="https://img.icons8.com/color/96/microsoft-word-2019--v2.png" alt="" loading="lazy"></div>
+      <div class="tool" role="img" aria-label="Microsoft PowerPoint" tabindex="0"><img src="https://img.icons8.com/color/96/microsoft-powerpoint-2019--v2.png" alt="" loading="lazy"></div>
+      <div class="tool" role="img" aria-label="Google Sheets" tabindex="0"><img src="https://img.icons8.com/color/96/google-sheets.png" alt="" loading="lazy"></div>
+      <div class="tool" role="img" aria-label="Google Docs" tabindex="0"><img src="https://img.icons8.com/color/96/google-docs.png" alt="" loading="lazy"></div>
+      <div class="tool google-workspace-tool" role="img" aria-label="Google Workspace" tabindex="0"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Google_Workspace_2026_wordmark.svg" alt="Google Workspace" loading="lazy"></div>
+      <div class="tool" role="img" aria-label="Canva" tabindex="0"><img src="https://static.canva.com/domain-assets/canva/static/images/android-192x192-2.png" alt="" loading="lazy"></div>
+      <div class="tool" role="img" aria-label="Visual Studio Code" tabindex="0"><img src="https://img.icons8.com/color/96/visual-studio-code-2019.png" alt="" loading="lazy"></div>
+      <div class="tool" role="img" aria-label="Notion" tabindex="0"><img src="https://cdn.simpleicons.org/notion/183247" alt="" loading="lazy"></div>
+      <div class="tool" role="img" aria-label="Zoom" tabindex="0"><img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-final" id="contact">
+  <div class="wrap" style="display:flex;gap:28px;flex-wrap:wrap-reverse;align-items:center;">
+    <div style="flex:1;min-width:280px;">
+      <h2 class="display">Let's Work <span class="script">together</span></h2>
+      <footer class="contact-location">OGAN KOMERING ILIR, SOUTH SUMATRA, INDONESIA</footer>
+      <div class="contacts contact-cards">
+        <a class="pill mail" href="mailto:dinimaharanisaldabila@gmail.com"><span class="contact-top"><img class="contact-icon" src="https://img.icons8.com/color/96/gmail-new.png" alt=""><span class="contact-arrow" aria-hidden="true">↗</span></span><span class="contact-rule"></span><span class="contact-detail">dinimaharanisaldabila@gmail.com</span></a>
+        <a class="pill wa" href="https://wa.me/6285225206415" target="_blank" rel="noopener"><span class="contact-top"><img class="contact-icon" src="https://img.icons8.com/color/96/whatsapp--v1.png" alt=""><span class="contact-arrow" aria-hidden="true">↗</span></span><span class="contact-rule"></span><span class="contact-detail">+62 852-2520-6415</span></a>
+        <a class="pill li" href="https://linkedin.com/in/dinimaharanis" target="_blank" rel="noopener"><span class="contact-top"><img class="contact-icon" src="https://img.icons8.com/color/48/linkedin.png" alt=""><span class="contact-arrow" aria-hidden="true">↗</span></span><span class="contact-rule"></span><span class="contact-detail">Dini Maharani Salsabillah</span></a>
+      </div>
+    </div>
+    <!-- ===== FOTO 13: CONTACT / PENUTUP ===== -->
+    <div class="photo-slot" style="border:none;background:none;padding:0;">
+      <img src="fotoclosing.PNG" alt="Foto penutup: Dini Maharani Salsabillah" Loading="Lazy" style="width:100%;max-width:400px;border-radius:8px;box-shadow:0 0 12px rgba(0,0,0,.2);">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<dialog class="photo-dialog" aria-label="Pratinjau foto">
+  <button class="dialog-close" type="button">Tutup</button>
+  <img class="dialog-image" alt="">
+  <p class="dialog-caption"></p>
+</dialog>
+
+<script>
+  const cover = document.getElementById('cover');
+  const portfolio = document.getElementById('portfolio-content');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let slideTransitionActive = false;
+  function scrollToSectionCore(destination, behavior = prefersReducedMotion ? 'instant' : 'smooth') {
+    if (destination === cover) {
+      destination.scrollIntoView({ behavior, block: 'start' });
+      return;
+    }
+    const core = destination.querySelector('.sec-head, .profile-body > .head, .contact-final .display') || destination;
+    const top = window.scrollY + core.getBoundingClientRect().top - window.innerHeight * 0.3;
+    window.scrollTo({ top: Math.max(0, top), behavior });
+  }
+  function slideToSection(destination, direction, revealPortfolio = false) {
+    slideTransitionActive = true;
+    if (destination === cover) document.body.classList.remove('cover-hidden');
+    if (prefersReducedMotion) {
+      if (revealPortfolio) {
+        portfolio.hidden = false;
+        document.body.classList.add('portfolio-ready', 'cover-hidden');
+        refreshVisibleReveals();
+        document.querySelector('#about h1')?.focus({ preventScroll: true });
+      }
+      scrollToSectionCore(destination, 'instant');
+      slideTransitionActive = false;
+      return;
+    }
+    const wipe = document.createElement('div');
+    wipe.className = 'slide-wipe';
+    document.body.append(wipe);
+    const enter = wipe.animate([
+      { transform: `translateX(${direction * 105}%)` },
+      { transform: 'translateX(0)' }
+    ], { duration: 900, easing: 'cubic-bezier(.72,0,.28,1)', fill: 'forwards' });
+    enter.onfinish = () => {
+      if (revealPortfolio) {
+        portfolio.hidden = false;
+        document.body.classList.add('portfolio-ready');
+        refreshVisibleReveals();
+      }
+      if (destination === cover) {
+        cover.classList.remove('cover-exit', 'cover-enter');
+        void cover.offsetWidth;
+        cover.classList.add('cover-enter');
+      }
+      scrollToSectionCore(destination, 'instant');
+      if (revealPortfolio) document.querySelector('#about h1')?.focus({ preventScroll: true });
+      destination.animate([
+        { opacity: 0.5, transform: `translateX(${-direction * 36}px) scale(.985)` },
+        { opacity: 1, transform: 'translateX(0) scale(1)' }
+      ], { duration: 950, easing: 'cubic-bezier(.2,.7,.2,1)' });
+      const leave = wipe.animate([
+        { transform: 'translateX(0)' },
+        { transform: `translateX(${-direction * 105}%)` }
+      ], { duration: 950, delay: 160, easing: 'cubic-bezier(.72,0,.28,1)', fill: 'forwards' });
+      leave.onfinish = () => {
+        wipe.remove();
+        if (destination === document.getElementById('about')) {
+          document.body.classList.add('cover-hidden');
+          window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+        slideTransitionActive = false;
+      };
+    };
+  }
+  window.addEventListener('scroll', () => {
+    if (slideTransitionActive || window.scrollY > 8 || !cover.classList.contains('cover-exit')) return;
+    cover.classList.remove('cover-exit', 'cover-enter');
+    void cover.offsetWidth;
+    cover.classList.add('cover-enter');
+  }, { passive: true });
+  document.getElementById('enter-portfolio').addEventListener('click', () => {
+    if (slideTransitionActive) return;
+    cover.classList.add('cover-exit');
+    history.replaceState(null, '', '#about');
+    slideToSection(document.getElementById('about'), 1, true);
+  });
+  document.querySelectorAll('.hero .photo-slot, #about .photo-slot').forEach((photo) => photo.remove());
+  const profileWrap = document.querySelector('#about .wrap.profile');
+  const profileBody = profileWrap.querySelector('.profile-body');
+  const profileSkills = profileBody.querySelector('.chips');
+  const profileContacts = profileBody.querySelector('.contacts');
+  const profileLinks = document.createElement('div');
+  profileLinks.className = 'profile-links';
+  const profileMain = document.createElement('div');
+  profileMain.className = 'profile-main';
+  const profileContactColumn = document.createElement('div');
+  profileContactColumn.className = 'profile-contact-column';
+  const profileQrColumn = document.createElement('div');
+  profileQrColumn.className = 'profile-qr-column';
+  profileMain.append(profileSkills);
+  profileContactColumn.append(profileContacts);
+  profileMain.append(profileContactColumn);
+  profileLinks.append(profileMain, profileQrColumn);
+  profileWrap.append(profileLinks);
+  const skillsSection = document.querySelector('#skills');
+  document.querySelector('#education').after(skillsSection);
+  const skillGroups = skillsSection.querySelector('.skill-groups');
+  const languageGroup = skillGroups.lastElementChild;
+  const toolsGrid = skillsSection.querySelector('.tools-grid');
+  const toolsHeading = document.createElement('h4');
+  toolsHeading.className = 'skill-subheading';
+  toolsHeading.textContent = 'TOOLS';
+  languageGroup.classList.add('language-group');
+  skillGroups.after(toolsHeading, toolsGrid, languageGroup);
+  document.body.classList.add('motion-ready');
+  document.querySelectorAll('section').forEach((section) => {
+    section.querySelectorAll(':scope > .wrap, .card, .ach-item, .cert-list li, .tool, .job-body, .edu-info, .contact-cards .pill, .chips .chip, .contacts .pill').forEach((item, index) => {
+      item.classList.add('reveal');
+      item.dataset.revealOrder = String(index);
+      item.style.transitionDelay = '0ms';
+    });
+  });
+  profileWrap.querySelectorAll('.chips .chip').forEach((chip) => chip.classList.remove('reveal'));
+  const assignRevealSequence = (selector, firstOrder) => {
+    document.querySelectorAll(selector).forEach((item, index) => {
+      item.dataset.revealOrder = String(firstOrder + index);
+    });
+  };
+  assignRevealSequence('#skills .skill-groups > div:first-child .chips .chip', 0);
+  assignRevealSequence('#skills .tools-grid .tool', 13);
+  assignRevealSequence('#skills .language-group .chips .chip', 23);
+  let revealFramePending = false;
+  function refreshVisibleReveals() {
+    if (revealFramePending) return;
+    revealFramePending = true;
+    requestAnimationFrame(() => {
+      revealFramePending = false;
+      document.querySelectorAll('.reveal').forEach((item) => {
+        const bounds = item.getBoundingClientRect();
+        const isVisible = bounds.bottom > innerHeight * 0.08 && bounds.top < innerHeight * 0.92;
+        const isRevealed = item.classList.contains('is-visible');
+        if (isVisible && !isRevealed) {
+          item.style.transitionDelay = `${Math.min(Number(item.dataset.revealOrder) || 0, 26) * 70}ms`;
+          item.classList.add('is-visible');
+        } else if (!isVisible && isRevealed) {
+          item.classList.remove('is-visible');
+          item.style.transitionDelay = '0ms';
+        }
+      });
+    });
+  }
+  window.addEventListener('scroll', refreshVisibleReveals, { passive: true });
+  window.addEventListener('resize', refreshVisibleReveals);
+  refreshVisibleReveals();
+
+  const navLinks = [...document.querySelectorAll('.nav-links a, .nav-brand')];
+  navLinks.forEach((link) => link.addEventListener('click', (event) => {
+    const destination = document.querySelector(link.getAttribute('href'));
+    if (!destination) return;
+    event.preventDefault();
+    const previousHash = location.hash;
+    const destinationHash = link.getAttribute('href');
+    history.pushState(null, '', destinationHash);
+    if (destination === cover) {
+      slideToSection(destination, -1);
+      return;
+    }
+    const isHomeAboutTransition = previousHash === '#cover' && destinationHash === '#about';
+    if (isHomeAboutTransition) {
+      slideToSection(destination, destinationHash === '#cover' ? -1 : 1);
+      return;
+    }
+    document.body.classList.add('cover-hidden');
+    scrollToSectionCore(destination);
+  }));
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navLinks.forEach((link) => {
+          const isCurrent = link.getAttribute('href') === `#${entry.target.id}`;
+          link.classList.toggle('active', isCurrent);
+          if (isCurrent) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
+      }
+    });
+  }, { rootMargin: '-25% 0px -60% 0px' });
+  document.querySelectorAll('section[id]').forEach((section) => sectionObserver.observe(section));
+
+  async function removeWhiteBackground(imageElement) {
+    const source = new Image();
+    source.src = imageElement.src;
+    await source.decode();
+    const canvas = document.createElement('canvas');
+    canvas.width = source.naturalWidth;
+    canvas.height = source.naturalHeight;
+    const context = canvas.getContext('2d', { willReadFrequently: true });
+    context.drawImage(source, 0, 0);
+    const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+    const pixels = imageData.data;
+    const pixelCount = canvas.width * canvas.height;
+    const background = new Uint8Array(pixelCount);
+    const queue = new Int32Array(pixelCount);
+    let queueEnd = 0;
+    const isWhiteBackground = (pixel) => {
+      const offset = pixel * 4;
+      const red = pixels[offset];
+      const green = pixels[offset + 1];
+      const blue = pixels[offset + 2];
+      return Math.min(red, green, blue) > 210 && Math.max(red, green, blue) - Math.min(red, green, blue) < 46;
+    };
+    const addBackgroundPixel = (pixel) => {
+      if (pixel < 0 || pixel >= pixelCount || background[pixel] || !isWhiteBackground(pixel)) return;
+      background[pixel] = 1;
+      queue[queueEnd++] = pixel;
+    };
+    for (let x = 0; x < canvas.width; x += 1) {
+      addBackgroundPixel(x);
+      addBackgroundPixel((canvas.height - 1) * canvas.width + x);
+    }
+    for (let y = 0; y < canvas.height; y += 1) {
+      addBackgroundPixel(y * canvas.width);
+      addBackgroundPixel(y * canvas.width + canvas.width - 1);
+    }
+    for (let index = 0; index < queueEnd; index += 1) {
+      const pixel = queue[index];
+      const x = pixel % canvas.width;
+      if (x > 0) addBackgroundPixel(pixel - 1);
+      if (x + 1 < canvas.width) addBackgroundPixel(pixel + 1);
+      if (pixel >= canvas.width) addBackgroundPixel(pixel - canvas.width);
+      if (pixel + canvas.width < pixelCount) addBackgroundPixel(pixel + canvas.width);
+    }
+    for (let pixel = 0; pixel < pixelCount; pixel += 1) {
+      if (!background[pixel]) continue;
+      const offset = pixel * 4;
+      const alpha = Math.max(0, Math.min(1, (255 - (pixels[offset] + pixels[offset + 1] + pixels[offset + 2]) / 3) / 255));
+      pixels[offset] = alpha ? Math.max(0, Math.min(255, (pixels[offset] - 255 * (1 - alpha)) / alpha)) : 0;
+      pixels[offset + 1] = alpha ? Math.max(0, Math.min(255, (pixels[offset + 1] - 255 * (1 - alpha)) / alpha)) : 0;
+      pixels[offset + 2] = alpha ? Math.max(0, Math.min(255, (pixels[offset + 2] - 255 * (1 - alpha)) / alpha)) : 0;
+      pixels[offset + 3] = alpha * 255;
+    }
+    context.putImageData(imageData, 0, 0);
+    imageElement.src = canvas.toDataURL('image/webp', 0.92);
+  }
+  let selfieModelPromise;
+  async function getSelfieModel() {
+    if (!selfieModelPromise) {
+      selfieModelPromise = (async () => {
+        if (!window.SelfieSegmentation) {
+          await new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js';
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.append(script);
+          });
+        }
+        const model = new SelfieSegmentation({
+          locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/${file}`
+        });
+        model.setOptions({ modelSelection: 1 });
+        return model;
+      })();
+    }
+    return selfieModelPromise;
+  }
+
+  async function removePersonBackground(imageElement) {
+    const source = new Image();
+    source.src = imageElement.src;
+    await source.decode();
+    const model = await getSelfieModel();
+    const inferenceScale = Math.min(1, 768 / source.naturalWidth, 768 / source.naturalHeight);
+    const inferenceCanvas = document.createElement('canvas');
+    inferenceCanvas.width = Math.round(source.naturalWidth * inferenceScale);
+    inferenceCanvas.height = Math.round(source.naturalHeight * inferenceScale);
+    inferenceCanvas.getContext('2d').drawImage(source, 0, 0, inferenceCanvas.width, inferenceCanvas.height);
+    const result = await new Promise((resolve, reject) => {
+      model.onResults(resolve);
+      model.send({ image: inferenceCanvas }).catch(reject);
+    });
+    const canvas = document.createElement('canvas');
+    canvas.width = source.naturalWidth;
+    canvas.height = source.naturalHeight;
+    const context = canvas.getContext('2d');
+    context.drawImage(source, 0, 0);
+    context.globalCompositeOperation = 'destination-in';
+    context.filter = 'blur(1px)';
+    context.drawImage(result.segmentationMask, 0, 0, canvas.width, canvas.height);
+    context.filter = 'none';
+    context.globalCompositeOperation = 'source-over';
+    imageElement.src = canvas.toDataURL('image/webp', 0.9);
+  }
+  const profilePortrait = document.querySelector('.profile-portrait img');
+  if (profilePortrait) {
+    let cachedPortrait = null;
+    try { cachedPortrait = localStorage.getItem('dini-profile-cutout-v3'); } catch {}
+    if (cachedPortrait) {
+      profilePortrait.src = cachedPortrait;
+    } else {
+      window.setTimeout(() => {
+        removePersonBackground(profilePortrait).then(() => {
+          try { localStorage.setItem('dini-profile-cutout-v3', profilePortrait.src); } catch {}
+        }).catch(() => {});
+      }, 5000);
+    }
+  }
+
+  const photoDialog = document.querySelector('.photo-dialog');
+  const dialogImage = photoDialog.querySelector('.dialog-image');
+  const dialogCaption = photoDialog.querySelector('.dialog-caption');
+  photoDialog.querySelector('.dialog-close').addEventListener('click', () => photoDialog.close());
+  photoDialog.addEventListener('click', (event) => {
+    if (event.target === photoDialog) photoDialog.close();
+  });
+  document.querySelectorAll('.assistant-lecturer-detail .al-document-open').forEach((button) => {
+    button.addEventListener('click', () => {
+      const image = button.querySelector('img');
+      const caption = button.closest('figure').querySelector('figcaption');
+      dialogImage.src = image.src;
+      dialogImage.alt = image.alt;
+      dialogCaption.textContent = caption.textContent.trim();
+      photoDialog.showModal();
+    });
+  });
+  document.querySelectorAll('.deputy-local-director-detail .dld-document-open, .deputy-local-director-detail .dld-photo-open, .secretariat-detail .dld-document-open').forEach((button) => {
+    button.addEventListener('click', () => {
+      const image = button.querySelector('img');
+      const caption = button.closest('figure').querySelector('figcaption');
+      dialogImage.src = image.src;
+      dialogImage.alt = image.alt;
+      dialogCaption.textContent = caption.textContent.trim();
+      photoDialog.showModal();
+    });
+  });
+  document.querySelectorAll('.hrd-coordinator-detail .hrd-document-open').forEach((button) => {
+    const image = button.querySelector('img');
+    const showMissingPhotoPlaceholder = () => {
+      const placeholder = document.createElement('div');
+      placeholder.className = 'fda-image-placeholder hrd-photo-pending';
+      placeholder.setAttribute('role', 'img');
+      placeholder.setAttribute('aria-label', image.alt);
+      placeholder.textContent = `Photo file to add: ${image.getAttribute('src')}`;
+      button.replaceWith(placeholder);
+    };
+    image.addEventListener('error', showMissingPhotoPlaceholder, { once: true });
+    if (image.complete && image.naturalWidth === 0) showMissingPhotoPlaceholder();
+    button.addEventListener('click', () => {
+      const caption = button.closest('figure').querySelector('figcaption');
+      dialogImage.src = image.src;
+      dialogImage.alt = image.alt;
+      dialogCaption.textContent = caption.textContent.trim();
+      photoDialog.showModal();
+    });
+  });
+
+  const photoDatabase = new Promise((resolve) => {
+    if (!window.indexedDB) return resolve(null);
+    const request = indexedDB.open('dini-portfolio-gallery', 1);
+    request.onupgradeneeded = () => request.result.createObjectStore('photos');
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => resolve(null);
+  });
+
+  async function loadPhoto(key) {
+    const database = await photoDatabase;
+    if (!database) return null;
+    return new Promise((resolve) => {
+      const request = database.transaction('photos').objectStore('photos').get(key);
+      request.onsuccess = () => resolve(request.result || null);
+      request.onerror = () => resolve(null);
+    });
+  }
+
+  async function savePhoto(key, file) {
+    const database = await photoDatabase;
+    if (!database) return;
+    const transaction = database.transaction('photos', 'readwrite');
+    transaction.objectStore('photos').put(file, key);
+  }
+
+  function createPhotoSlot(key, caption, className = '', imagePath = '') {
+    const wrapper = document.createElement('div');
+    wrapper.className = className;
+    const label = document.createElement('label');
+    label.className = 'upload-card';
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.setAttribute('aria-label', `Pilih foto: ${caption}`);
+    const prompt = document.createElement('span');
+    prompt.className = 'upload-prompt';
+    prompt.innerHTML = '<span aria-hidden="true">＋</span>Tambah foto';
+    label.append(input, prompt);
+    const captionText = document.createElement('p');
+    captionText.className = 'upload-caption';
+    captionText.textContent = caption;
+    wrapper.append(label, captionText);
+
+    function showPhoto(file) {
+      const image = document.createElement('img');
+      image.src = typeof file === 'string' ? file : URL.createObjectURL(file);
+      image.alt = caption;
+      label.replaceChildren(input, image);
+      label.title = 'Klik untuk mengganti foto';
+      image.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        dialogImage.src = image.src;
+        dialogCaption.textContent = caption;
+        photoDialog.showModal();
+      });
+    }
+
+    input.addEventListener('change', () => {
+      const file = input.files && input.files[0];
+      if (!file) return;
+      showPhoto(file);
+      savePhoto(key, file);
+    });
+    loadPhoto(key).then((file) => {
+      if (file) showPhoto(file);
+      else if (imagePath) showPhoto(imagePath);
+    });
+    return wrapper;
+  }
+
+  document.querySelector('#about .profile-qr-column').append(createPhotoSlot('cv-qr-code', 'CV QR CODE', 'cv-qr-slot', 'qrcv.jpeg'));
+
+  const experiencePhotos = {
+    'Farmers Development Associate': [
+      'Pendampingan dan komunikasi dengan mitra petani',
+      'Pengumpulan data operasional dan finansial 36 mitra',
+      'Pencatatan kondisi serta progres kegiatan lapangan',
+      'Pemantauan kinerja aktual dibanding rencana program',
+      'Koordinasi tindak lanjut dengan stakeholder program',
+      'Penyusunan laporan progres bulanan program MSIB'
+    ],
+    'Agricultural Instructor': [
+      'Penyampaian materi praktik pertanian',
+      'Pembelajaran teknik budidaya pertanian',
+      'Diskusi ekonomi dan agribisnis pertanian',
+      'Materi manajemen keuangan usaha tani',
+      'Analisis pendapatan, biaya, dan laba-rugi',
+      'Kegiatan belajar bersama siswa SMKN PP Cianjur'
+    ],
+    'Assistant Lecturer': [
+      'Greenhouse Technology - Assistant Lecturer Certificate',
+      'Greenhouse Technology - Practical Activity',
+      'Agricultural Workshop - Assistant Lecturer Certificate',
+      'Agricultural Workshop - Practical Activity',
+      'Agricultural Instrumentation & Control Systems - Assistant Lecturer Certificate',
+      'Agricultural Instrumentation & Control Systems - Practical Activity'
+    ],
+    'Deputy Local Director': [
+      'Koordinasi bersama Local Director dan tim',
+      'Kolaborasi lintas departemen IAAS LC UNSRI',
+      'Evaluasi pelaksanaan program kerja',
+      'Perwakilan organisasi pada PKKMB Universitas Sriwijaya',
+      'Wawancara kandidat anggota IAAS',
+      'Koordinasi alur informasi dan program organisasi'
+    ],
+  };
+
+  const experiencePhotoImages = {
+    'Assistant Lecturer': [
+      'sertifasdostrk.jpeg',
+      'trk.jpeg',
+      'sertifasdosbengkel.jpeg',
+      'bengkel.jpeg',
+      'sertifasdosinstru.jpeg',
+      'instru.jpeg'
+    ]
+  };
+
+  document.querySelectorAll('#experience .card.job, #organizational .card.job').forEach((card, cardIndex) => {
+    if (card.classList.contains('farmers-development-detail') || card.classList.contains('agricultural-instructor-detail') || card.classList.contains('assistant-lecturer-detail') || card.classList.contains('deputy-local-director-detail') || card.classList.contains('hrd-coordinator-detail') || card.classList.contains('secretariat-detail')) return;
+    const title = card.querySelector('.job-body h3');
+    const titleText = title ? title.textContent.trim() : 'Experience';
+    const captions = (experiencePhotos[titleText] || Array(4).fill('Dokumentasi kegiatan dan pengalaman')).slice(0, titleText === 'Assistant Lecturer' ? 6 : 4);
+    card.classList.add('work-folder');
+    card.querySelector('.job-photo')?.remove();
+    const folder = document.createElement('div');
+    folder.className = 'experience-gallery';
+    const galleryHeading = document.createElement('h4');
+    galleryHeading.textContent = 'Photo Documentation';
+    const grid = document.createElement('div');
+    grid.className = 'folder-grid';
+    captions.forEach((caption, photoIndex) => {
+      const legacyCardIndex = cardIndex + (card.closest('#organizational') ? 2 : 0);
+      const photoKey = titleText === 'Assistant Lecturer'
+        ? `experience-assistant-lecturer-${photoIndex}`
+        : `experience-${legacyCardIndex}-${photoIndex}`;
+      grid.append(createPhotoSlot(photoKey, caption, '', experiencePhotoImages[titleText]?.[photoIndex] || ''));
+    });
+    folder.append(galleryHeading, grid);
+    card.append(folder);
+  });
+
+  const entriesWithProfileColumn = new Set([
+    'Agricultural Instructor',
+    'Assistant Lecturer',
+    'Deputy Local Director',
+    'Coordinator of Human Resources Development Department'
+  ]);
+  document.querySelectorAll('#experience .card.job, #organizational .card.job').forEach((card) => {
+    const jobBody = card.querySelector('.job-body');
+    const title = jobBody?.querySelector('h3');
+    const period = jobBody?.querySelector('.period');
+    const organization = jobBody?.querySelector('.org');
+    const titleText = title?.textContent.trim();
+    if (!jobBody || !title || !period || !organization || !entriesWithProfileColumn.has(titleText)) return;
+
+    card.classList.add('fda-style-entry');
+    const heading = document.createElement('div');
+    heading.className = 'fda-heading';
+    const profileLogos = {
+      'Agricultural Instructor': { src: 'smkpp.png', alt: 'SMKN PP Cianjur logo' },
+      'Assistant Lecturer': { src: 'unsri.PNG', alt: 'Sriwijaya University logo' },
+      'Deputy Local Director': { src: 'iaas.png', alt: 'International Association of Agricultural Students logo' },
+      'Coordinator of Human Resources Development Department': { src: 'iaas.png', alt: 'International Association of Agricultural Students logo' }
+    };
+    const logo = profileLogos[titleText];
+    const profileLogo = document.createElement('div');
+    profileLogo.className = 'fda-profile-logo';
+    const logoImage = document.createElement('img');
+    logoImage.src = logo.src;
+    logoImage.alt = logo.alt;
+    profileLogo.append(logoImage);
+
+    const headingMain = document.createElement('div');
+    headingMain.className = 'fda-heading-main';
+    period.classList.add('fda-period');
+    organization.classList.add('fda-org');
+    headingMain.append(period, title, organization);
+    heading.append(profileLogo, headingMain);
+    jobBody.prepend(heading);
+  });
+
+  const organization = document.querySelector('#organizational');
+  const organizationCards = [...organization.querySelectorAll('.card.job')];
+  const deputyCard = organizationCards.find((card) => card.querySelector('h3')?.textContent.includes('Deputy Local Director'));
+  const hrdCoordinatorCard = organization.querySelector('.hrd-coordinator-detail');
+  if (deputyCard && hrdCoordinatorCard) organization.querySelector('.sec-head').after(deputyCard, hrdCoordinatorCard);
+
+  document.querySelectorAll('#experience .card.job, #organizational .card.job').forEach((card) => {
+    card.querySelectorAll('.fda-section, .fda-cert-tools-grid, .experience-gallery').forEach((item, index) => {
+      item.classList.add('reveal');
+      item.dataset.revealOrder = String(index);
+      item.style.transitionDelay = '0ms';
+    });
+  });
+
+  const achievementItems = [...document.querySelectorAll('.ach-list .ach-item')];
+  document.querySelector('.ach-row > .photo-slot')?.remove();
+  const achievementList = document.querySelector('.ach-list');
+  achievementList?.classList.add('achievement-grid');
+  const orderedAchievements = [
+    achievementItems.find((item) => item.querySelector('.tag')?.textContent.includes('MASTER OF CEREMONIES')),
+    achievementItems.find((item) => item.querySelector('p')?.textContent.includes('Biology')),
+    achievementItems.find((item) => item.querySelector('p')?.textContent.includes('Indonesian Language'))
+  ].filter(Boolean);
+  orderedAchievements.forEach((item) => achievementList.append(item));
+  const achievementCertificates = [
+    'sertifmc.jpeg',
+    'sertifolimbiologi.jpeg',
+    'sertifolimindonesia.jpeg'
+  ];
+  orderedAchievements.forEach((item, index) => {
+    item.append(createPhotoSlot(`achievement-${index}`, 'Certificate', '', achievementCertificates[index]));
+  });
+
+  const trainingCertificates = [
+    'sertiftoefl.jpeg',
+    'sertifmicrosoft.jpg',
+    'sertifcoursera.jpeg',
+    'sertifkarirnex.jpeg',
+    'sertifeduanalisis.jpeg',
+    'sertifedubisnis.jpeg',
+    'sertifedupemangku.jpeg',
+    'sertifedupemecah.jpeg'
+  ];
+  document.querySelectorAll('.cert-list li').forEach((item, index) => {
+    const title = item.querySelector('span:first-child');
+    const source = item.querySelector('.src');
+    const details = document.createElement('details');
+    details.className = 'cert-details';
+    const summary = document.createElement('summary');
+    const certTitle = document.createElement('span');
+    certTitle.className = 'cert-title';
+    certTitle.innerHTML = title ? title.innerHTML : item.textContent;
+    const certSource = document.createElement('span');
+    certSource.className = 'src';
+    certSource.textContent = source ? source.textContent : '';
+    summary.append(certTitle, certSource);
+    const preview = document.createElement('div');
+    preview.className = 'cert-preview';
+    const isBootcamp = certTitle.textContent.includes('Bootcamp Data Analyst');
+    if (isBootcamp) preview.classList.add('cert-dual');
+    preview.append(createPhotoSlot(`training-${index}`, 'Certificate', '', trainingCertificates[index] || ''));
+    if (isBootcamp) {
+      preview.append(createPhotoSlot('training-karirnex-materials', 'Training Materials', '', 'materikarirnex.jpeg'));
+    }
+    details.append(summary, preview);
+    item.replaceChildren(details);
+  });
+
+  const exclusiveTrainingCertificates = [...document.querySelectorAll('#training .cert-details')];
+  exclusiveTrainingCertificates.forEach((gallery) => gallery.addEventListener('toggle', () => {
+    if (gallery.open) {
+      exclusiveTrainingCertificates.forEach((otherGallery) => {
+        if (otherGallery !== gallery) otherGallery.open = false;
+      });
+    }
+  }));
+</script>
+</body>
+</html>
